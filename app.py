@@ -69,7 +69,19 @@ def upload():
         if f.mimetype not in ('image/jpeg','image/png','image/webp'):abort(400,'JPEG, PNG or WebP only')
         r=requests.post(API+'/commerce/media/v1_beta/image/create_image_from_file',headers={'Authorization':'Bearer '+access,'Accept':'application/json'},files={'image':(f.filename,f.stream,f.mimetype)},timeout=90)
         if not r.ok:
-            results.append((idx,f.filename,'UPLOAD FAILED (HTTP '+str(r.status_code)+')'));continue
+    error = r.text[:1000]
+    app.logger.error(
+        "eBay upload failed: HTTP %s: %s",
+        r.status_code,
+        error
+    )
+    results.append((
+        idx,
+        f.filename,
+        'UPLOAD FAILED (HTTP '
+        + str(r.status_code) + ')'
+    ))
+    continue
         data=r.json() if r.content else {}; url=data.get('imageUrl')
         if not url:
             loc=r.headers.get('Location','')
