@@ -3,65 +3,98 @@ import os
 import secrets
 import time
 import html
-from urllib.parse import urlencode
+import logging
+from urllib.parse import urlencode, urlparse
 
 import requests
+
 from flask import (
     Flask,
     request,
     session,
     redirect,
+    url_for,
     render_template_string,
     Response,
     abort,
 )
 
+# ============================================================
+# CRECE MERCHANT CO — EBAY PHOTO UPLOADER
+# ============================================================
+
 app = Flask(__name__)
 
 app.secret_key = os.environ.get(
     "FLASK_SECRET_KEY",
-    "dev-only-change-me"
+    "development-only-change-this"
 )
 
 app.config.update(
-    SESSION_COOKIE_SECURE=(
-        os.environ.get("RENDER", "") == "true"
-    ),
+    SESSION_COOKIE_SECURE=bool(os.environ.get("RENDER")),
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE="Lax",
     MAX_CONTENT_LENGTH=80 * 1024 * 1024,
 )
 
-# Temporary, in-memory OAuth token storage.
+logging.basicConfig(level=logging.INFO)
+
+# NOTE:
+# Tokens are stored in memory. Render restarts will require
+# you to connect to eBay again.
 TOKENS = {}
 
-SCOPES = (
-    "https://api.ebay.com/oauth/api_scope/"
-    "sell.inventory"
+EBAY_API = "https://api.ebay.com"
+
+EBAY_SCOPE = (
+    "https://api.ebay.com/oauth/api_scope/sell.inventory"
 )
 
-API = "https://api.ebay.com"
+UPLOAD_ENDPOINT = (
+    EBAY_API
+    + "/commerce/media/v1_beta/image/create_image_from_file"
+)
+
+# Retry only temporary server failures.
+RETRY_STATUS_CODES = {502, 503, 504}
+
+# Limit the number of attempts so a broken eBay service
+# does not leave the uploader running indefinitely.
+MAX_ATTEMPTS = 2
 
 
-def base():
-    return os.environ.get(
-        "PUBLIC_BASE_URL",
-        "http://localhost:5000"
-    ).rstrip("/")
-
+# ============================================================
+# CONFIGURATION
+# ============================================================
 
 def config_ready():
-    required = (
+    required = [
         "EBAY_CLIENT_ID",
         "EBAY_CLIENT_SECRET",
         "EBAY_RUNAME",
         "FLASK_SECRET_KEY",
+    ]
+
+    return all(os.environ.get(key) for key in required)
+
+
+def ebay_credentials():
+    return (
+        os.environ["EBAY_CLIENT_ID"],
+        os.environ["EBAY_CLIENT_SECRET"],
     )
-    return all(os.environ.get(k) for k in required)
 
 
-def token():
+# ============================================================
+# OAUTH TOKEN MANAGEMENT
+# ============================================================
+
+def get_access_token():
     sid = session.get("sid")
+
+    if not sid:
+        return None
+
     entry = TOKENS.get(sid)
 
     if not entry:
@@ -70,36 +103,36 @@ def token():
     if entry["expires"] > time.time() + 90:
         return entry["access_token"]
 
-    if not entry.get("refresh_token"):
+    refresh_token = entry.get("refresh_token")
+
+    if not refresh_token:
         return None
 
     try:
-        r = requests.post(
-            API + "/identity/v1/oauth2/token",
-            auth=(
-                os.environ["EBAY_CLIENT_ID"],
-                os.environ["EBAY_CLIENT_SECRET"],
-            ),
+        response = requests.post(
+            EBAY_API + "/identity/v1/oauth2/token",
+            auth=ebay_credentials(),
             data={
                 "grant_type": "refresh_token",
-                "refresh_token": entry["refresh_token"],
-                "scope": SCOPES,
+                "refresh_token": refresh_token,
+                "scope": EBAY_SCOPE,
             },
-            timeout=25,
+            timeout=30,
         )
 
-        if not r.ok:
+        if not response.ok:
             app.logger.error(
-                "Token refresh failed: HTTP %s",
-                r.status_code
+                "OAuth refresh failed: HTTP %s",
+                response.status_code,
             )
             return None
 
-        data = r.json()
+        data = response.json()
 
-        entry.update(
-            access_token=data["access_token"],
-            expires=time.time() + data["expires_in"],
+        entry["access_token"] = data["access_token"]
+
+        entry["expires"] = (
+            time.time() + data["expires_in"]
         )
 
         if data.get("refresh_token"):
@@ -107,141 +140,184 @@ def token():
 
         return entry["access_token"]
 
-    except requests.RequestException:
-        app.logger.exception("Token refresh request failed")
+    except (requests.RequestException, ValueError):
+        app.logger.exception("OAuth refresh error")
         return None
 
 
-PAGE = """
+# ============================================================
+# HOME PAGE
+# ============================================================
+
+HOME_HTML = """
 <!doctype html>
 <html lang="en">
+
 <head>
+<meta charset="utf-8">
+
 <meta name="viewport"
-      content="width=device-width,initial-scale=1">
+      content="width=device-width, initial-scale=1">
 
 <title>Crece Merchant Co — eBay Photos</title>
 
 <style>
 body {
-    font: 16px system-ui, sans-serif;
-    max-width: 680px;
-    margin: 32px auto;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
     padding: 0 18px;
     color: #222;
+    line-height: 1.5;
 }
 
 h1 {
     font-size: 26px;
 }
 
-a, button {
-    color: #0759c9;
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-button {
-    padding: 12px 18px;
-    font-size: 17px;
+button, .button {
+    display: inline-block;
+    background: #1559b7;
+    color: white;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-input {
-    margin: 10px 0;
+input[type=file] {
+    display: block;
+    margin: 18px 0;
     max-width: 100%;
 }
 
-section {
-    border: 1px solid #ddd;
-    padding: 18px;
-    border-radius: 12px;
-    margin: 18px 0;
+.note {
+    color: #555;
+    font-size: 14px;
 }
 
-small {
-    color: #555;
+.success {
+    color: #18743a;
+    font-weight: bold;
 }
+
 </style>
 </head>
 
 <body>
 
-<h1>Crece Merchant Co — eBay photo uploader</h1>
+<h1>Crece Merchant Co</h1>
+
+<h2>eBay Photo Uploader</h2>
 
 <p>
-Upload your item photos directly to eBay.
-No listing will be published.
+Upload listing photographs directly to eBay
+Picture Services.
 </p>
 
 {% if not ready %}
 
-<section>
-<strong>Configuration required.</strong>
+<div class="card">
+
+<h3>Configuration required</h3>
+
 <p>
-Check your eBay credentials and environment
-variables in Render.
+Check your eBay credentials and Flask secret
+in Render's environment settings.
 </p>
-</section>
+
+</div>
 
 {% elif not connected %}
 
-<section>
-<a href="/login">
-Connect your eBay seller account
+<div class="card">
+
+<p>
+Connect your eBay seller account to begin.
+</p>
+
+<a class="button" href="{{ url_for('login') }}">
+Connect to eBay
 </a>
-</section>
+
+</div>
 
 {% else %}
 
-<section>
+<div class="card">
 
-<strong>Connected to eBay</strong>
+<p class="success">
+Connected to eBay
+</p>
 
-<form method="post"
-      action="/upload"
-      enctype="multipart/form-data">
+<form
+    action="{{ url_for('upload') }}"
+    method="post"
+    enctype="multipart/form-data"
+>
 
-<p>
-<label>
-Choose photos:
-<br>
-<input type="file"
-       name="photos"
-       multiple
-       accept="image/jpeg,image/png,image/webp"
-       required>
+<label for="photos">
+<strong>Select your listing photographs</strong>
 </label>
-</p>
 
-<p>
-<small>
+<input
+    id="photos"
+    name="photos"
+    type="file"
+    accept="image/jpeg,image/png,image/webp"
+    multiple
+    required
+>
+
+<p class="note">
 Select your main photograph first.
-</small>
+You can upload up to 24 photographs.
 </p>
 
 <button type="submit">
-Upload photos to eBay
+Upload photographs
 </button>
 
 </form>
 
-<p>
-<small>
-Photos are processed in memory and are
-not stored on this server.
-</small>
-</p>
+</div>
 
-<form method="post" action="/disconnect">
+<div class="card">
+
+<form
+    method="post"
+    action="{{ url_for('disconnect') }}"
+>
+
 <button type="submit">
-Disconnect
+Disconnect eBay
 </button>
+
 </form>
 
-</section>
+</div>
 
 {% endif %}
 
+<p class="note">
+This uploader does not publish or modify
+your eBay listings.
+</p>
+
 <p>
-<a href="/privacy">Privacy policy</a>
+<a href="{{ url_for('privacy') }}">
+Privacy policy
+</a>
 </p>
 
 </body>
@@ -252,63 +328,80 @@ Disconnect
 @app.get("/")
 def index():
     return render_template_string(
-        PAGE,
+        HOME_HTML,
         ready=config_ready(),
-        connected=(
-            session.get("sid") in TOKENS
-        ),
+        connected=bool(get_access_token()),
     )
 
+
+# ============================================================
+# PRIVACY POLICY
+# ============================================================
 
 @app.get("/privacy")
 def privacy():
     return """
-    <h1>Crece Merchant Co eBay Uploader
-    — Privacy Policy</h1>
+    <!doctype html>
+    <html lang="en">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1">
+
+    <title>Privacy Policy — Crece Merchant Co</title>
+
+    <body style="
+        font-family:system-ui;
+        max-width:700px;
+        margin:30px auto;
+        padding:0 18px;
+        line-height:1.5;
+    ">
+
+    <h1>Privacy Policy</h1>
 
     <p>
-    This private, single-seller application is
-    used by its owner to upload product images
-    to eBay.
+    Crece Merchant Co operates a private
+    application to upload listing photographs
+    to eBay Picture Services.
     </p>
 
     <p>
-    OAuth credentials and tokens are processed
-    on the server. User access and refresh
-    tokens are held temporarily in server
-    memory only and are lost on restart
-    or disconnect.
+    The application uses eBay OAuth to obtain
+    permission from its seller account.
+    Access and refresh tokens are held
+    temporarily in server memory.
     </p>
 
     <p>
-    Product photos are sent to eBay and are
-    not stored on this server.
+    Uploaded photographs are transmitted
+    to eBay. The application does not
+    permanently store the photographs.
     </p>
 
     <p>
-    The application does not collect buyer,
-    order, or customer profile data.
+    The hosting provider may retain
+    ordinary server request logs.
     </p>
 
     <p>
-    Uploaded photographs and resulting URLs
-    are subject to eBay's policies.
-    The hosting provider may retain ordinary
-    request logs.
+    Contact:
+    crecemerchantco@gmail.com
     </p>
 
-    <p>
-    Contact: crecemerchantco@gmail.com
-    </p>
+    <p><a href="/">Return to uploader</a></p>
 
-    <p><a href="/">Back</a></p>
+    </body>
+    </html>
     """
 
+
+# ============================================================
+# EBAY LOGIN
+# ============================================================
 
 @app.get("/login")
 def login():
     if not config_ready():
-        abort(503, "Configuration incomplete")
+        abort(503, "Application configuration incomplete")
 
     state = secrets.token_urlsafe(32)
 
@@ -318,14 +411,16 @@ def login():
         "client_id": os.environ["EBAY_CLIENT_ID"],
         "response_type": "code",
         "redirect_uri": os.environ["EBAY_RUNAME"],
-        "scope": SCOPES,
+        "scope": EBAY_SCOPE,
         "state": state,
     }
 
-    return redirect(
+    authorization_url = (
         "https://auth.ebay.com/oauth2/authorize?"
         + urlencode(params)
     )
+
+    return redirect(authorization_url)
 
 
 @app.get("/oauth/callback")
@@ -335,54 +430,48 @@ def callback():
         None
     )
 
-    received_state = request.args.get("state")
-    code = request.args.get("code")
+    received_state = request.args.get("state", "")
+
+    authorization_code = request.args.get("code")
 
     if (
         not expected_state
         or not secrets.compare_digest(
             expected_state,
-            received_state or ""
+            received_state,
         )
-        or not code
+        or not authorization_code
     ):
-        abort(
-            400,
-            "Authorization failed or state mismatch"
-        )
+        abort(400, "Invalid eBay authorization response")
 
     try:
-        r = requests.post(
-            API + "/identity/v1/oauth2/token",
-            auth=(
-                os.environ["EBAY_CLIENT_ID"],
-                os.environ["EBAY_CLIENT_SECRET"],
-            ),
+        response = requests.post(
+            EBAY_API + "/identity/v1/oauth2/token",
+            auth=ebay_credentials(),
             data={
                 "grant_type": "authorization_code",
-                "code": code,
+                "code": authorization_code,
                 "redirect_uri": os.environ["EBAY_RUNAME"],
             },
-            timeout=25,
+            timeout=30,
         )
+
+        if not response.ok:
+            app.logger.error(
+                "OAuth authorization failed: HTTP %s",
+                response.status_code,
+            )
+
+            abort(502, "eBay authorization failed")
+
+        data = response.json()
 
     except requests.RequestException:
         app.logger.exception(
-            "eBay authorization request failed"
-        )
-        abort(502, "Authorization request failed")
-
-    if not r.ok:
-        app.logger.error(
-            "eBay authorization failed: HTTP %s",
-            r.status_code
-        )
-        abort(
-            502,
-            "eBay authorization failed"
+            "OAuth authorization request error"
         )
 
-    data = r.json()
+        abort(502, "Could not contact eBay")
 
     sid = secrets.token_urlsafe(32)
 
@@ -390,22 +479,20 @@ def callback():
 
     TOKENS[sid] = {
         "access_token": data["access_token"],
-        "refresh_token": data.get(
-            "refresh_token"
-        ),
+        "refresh_token": data.get("refresh_token"),
         "expires": (
             time.time() + data["expires_in"]
         ),
     }
 
-    return redirect("/")
+    return redirect(url_for("index"))
 
 
 @app.get("/oauth/declined")
 def declined():
     return (
-        'Authorization declined. '
-        '<a href="/">Return</a>'
+        '<p>eBay authorization was declined.</p>'
+        '<p><a href="/">Return to uploader</a></p>'
     )
 
 
@@ -413,270 +500,441 @@ def declined():
 def disconnect():
     sid = session.pop("sid", None)
 
-    TOKENS.pop(sid, None)
+    if sid:
+        TOKENS.pop(sid, None)
 
-    return redirect("/")
+    return redirect(url_for("index"))
 
 
-@app.post("/upload")
-def upload():
-    access = token()
+# ============================================================
+# EBAY MEDIA API
+# ============================================================
 
-    if not access:
-        return redirect("/login")
+def upload_one_image(access_token, photo):
+    """
+    Upload one photograph to eBay Media API.
 
-    photos = [
-        f for f in request.files.getlist("photos")
-        if f.filename
-    ]
+    Returns:
+        (image_url, error_message)
+    """
 
-    if not photos or len(photos) > 24:
-        abort(
-            400,
-            "Choose between 1 and 24 photos"
-        )
+    headers = {
+        "Authorization": "Bearer " + access_token,
+        "Accept": "application/json",
+    }
 
-    allowed = (
-        "image/jpeg",
-        "image/png",
-        "image/webp",
-    )
+    last_error = ""
 
-    for f in photos:
-        if f.mimetype not in allowed:
-            abort(
-                400,
-                "JPEG, PNG or WebP only"
-            )
-
-    results = []
-
-    for idx, f in enumerate(photos, 1):
-
-        app.logger.info(
-            "Uploading photo %s: %s",
-            idx,
-            f.filename
-        )
+    for attempt in range(1, MAX_ATTEMPTS + 1):
 
         try:
-            f.stream.seek(0)
+            photo.stream.seek(0)
 
-            r = requests.post(
-                API
-                + "/commerce/media/v1_beta/"
-                "image/create_image_from_file",
-                headers={
-                    "Authorization": (
-                        "Bearer " + access
-                    ),
-                    "Accept": "application/json",
-                },
+            response = requests.post(
+                UPLOAD_ENDPOINT,
+                headers=headers,
                 files={
                     "image": (
-                        f.filename,
-                        f.stream,
-                        f.mimetype,
+                        photo.filename,
+                        photo.stream,
+                        photo.mimetype,
                     )
                 },
-                timeout=90,
+                timeout=(15, 90),
             )
 
         except requests.RequestException as exc:
-            app.logger.error(
-                "Photo %s request failed: %s",
-                idx,
-                type(exc).__name__
+            last_error = (
+                "Network request failed: "
+                + type(exc).__name__
             )
 
-            results.append((
-                idx,
-                f.filename,
-                "NETWORK ERROR",
-                "",
-            ))
-
-            continue
-
-        # Diagnostic logging for unsuccessful uploads.
-        if not r.ok:
-
-            error = r.text[:1000]
-
-            app.logger.error(
-                "eBay upload failed: HTTP %s — %s",
-                r.status_code,
-                error
+            app.logger.warning(
+                "Image upload attempt %s: %s",
+                attempt,
+                last_error,
             )
 
-            results.append((
-                idx,
-                f.filename,
-                (
-                    "UPLOAD FAILED "
-                    f"(HTTP {r.status_code})"
-                ),
-                error,
-            ))
+            if attempt < MAX_ATTEMPTS:
+                time.sleep(2)
+                continue
 
-            continue
+            return None, last_error
 
-        # Successful response.
+        # Retry temporary eBay server errors.
+        if response.status_code in RETRY_STATUS_CODES:
+
+            last_error = (
+                f"eBay HTTP {response.status_code}: "
+                + response.text[:500]
+            )
+
+            app.logger.warning(
+                "Temporary eBay upload failure "
+                "on attempt %s: HTTP %s",
+                attempt,
+                response.status_code,
+            )
+
+            if attempt < MAX_ATTEMPTS:
+                time.sleep(3)
+                continue
+
+            return None, last_error
+
+        # Do not retry authorization or malformed requests.
+        if not response.ok:
+
+            last_error = (
+                f"eBay HTTP {response.status_code}: "
+                + response.text[:1000]
+            )
+
+            app.logger.error(
+                "eBay upload rejected: HTTP %s",
+                response.status_code,
+            )
+
+            return None, last_error
+
+        # eBay normally returns HTTP 201 and a JSON body.
         try:
-            data = r.json() if r.content else {}
+            data = response.json() if response.content else {}
 
         except ValueError:
             data = {}
 
-        url = data.get("imageUrl")
+        image_url = data.get("imageUrl")
 
-        # Some eBay responses provide a resource
-        # location rather than an immediate URL.
-        if not url:
+        if image_url:
+            return image_url, None
 
-            loc = r.headers.get(
-                "Location",
-                ""
+        # A successful response may include an image
+        # resource URI in the Location header.
+        location = response.headers.get("Location", "")
+
+        if not location:
+            return (
+                None,
+                "eBay accepted the image but returned "
+                "neither an image URL nor a resource location."
             )
 
-            if loc:
+        # Only request eBay's documented API hosts.
+        parsed = urlparse(location)
 
-                if loc.startswith(
-                    "https://api.ebay.com/"
-                ):
-                    resource_url = loc
+        if location.startswith("/"):
+            resource_url = EBAY_API + location
 
-                elif loc.startswith("/"):
-                    resource_url = API + loc
-
-                else:
-                    resource_url = None
-
-                if resource_url:
-
-                    try:
-                        gr = requests.get(
-                            resource_url,
-                            headers={
-                                "Authorization": (
-                                    "Bearer " + access
-                                )
-                            },
-                            timeout=25,
-                        )
-
-                        if gr.ok:
-                            url = gr.json().get(
-                                "imageUrl"
-                            )
-
-                        else:
-                            app.logger.error(
-                                "Image lookup failed: "
-                                "HTTP %s — %s",
-                                gr.status_code,
-                                gr.text[:1000],
-                            )
-
-                    except (
-                        requests.RequestException,
-                        ValueError,
-                    ):
-                        app.logger.exception(
-                            "Image lookup error"
-                        )
-
-        if url:
-
-            app.logger.info(
-                "Photo %s uploaded successfully",
-                idx
+        elif (
+            parsed.scheme == "https"
+            and parsed.hostname in (
+                "api.ebay.com",
+                "apim.ebay.com",
             )
-
-            results.append((
-                idx,
-                f.filename,
-                url,
-                "",
-            ))
+        ):
+            resource_url = location
 
         else:
-
-            app.logger.warning(
-                "Photo %s accepted but no URL returned",
-                idx
+            return (
+                None,
+                "eBay returned an unexpected image "
+                "resource location."
             )
 
-            results.append((
-                idx,
-                f.filename,
-                "Uploaded, but no image URL returned",
-                "",
-            ))
+        try:
+            details = requests.get(
+                resource_url,
+                headers=headers,
+                timeout=30,
+            )
 
-    # Build the results page.
-    lines = [
-        "<!doctype html>",
-        '<html lang="en">',
-        '<meta name="viewport" '
-        'content="width=device-width,initial-scale=1">',
-        "<title>eBay upload results</title>",
-        "<style>",
-        "body{font:16px system-ui;"
-        "max-width:680px;margin:30px auto;"
-        "padding:0 18px}",
-        "li{margin:20px 0}",
-        "code{overflow-wrap:anywhere}",
-        ".error{color:#a00;"
-        "background:#fff1f1;padding:12px;"
-        "border-radius:8px}",
-        "</style>",
-        "<h1>eBay image upload results</h1>",
-        "<p>The first successfully uploaded image "
-        "should be your main photo.</p>",
-        "<ol>",
+            if not details.ok:
+                return (
+                    None,
+                    "Image uploaded, but retrieving its "
+                    f"URL failed: HTTP {details.status_code}"
+                )
+
+            image_data = details.json()
+
+            image_url = image_data.get("imageUrl")
+
+            if image_url:
+                return image_url, None
+
+            return (
+                None,
+                "Image uploaded, but eBay did not "
+                "return an image URL."
+            )
+
+        except (requests.RequestException, ValueError):
+            app.logger.exception(
+                "Could not retrieve uploaded image details"
+            )
+
+            return (
+                None,
+                "Image uploaded, but the request to "
+                "retrieve its URL failed."
+            )
+
+    return None, last_error or "Unknown upload error"
+
+
+# ============================================================
+# UPLOAD PHOTOGRAPHS
+# ============================================================
+
+@app.post("/upload")
+def upload():
+    access_token = get_access_token()
+
+    if not access_token:
+        return redirect(url_for("login"))
+
+    photos = [
+        photo
+        for photo in request.files.getlist("photos")
+        if photo.filename
     ]
 
-    for idx, name, result, error in results:
-
-        lines.append("<li>")
-
-        lines.append(
-            "<strong>"
-            + html.escape(name)
-            + "</strong><br>"
+    if not 1 <= len(photos) <= 24:
+        abort(
+            400,
+            "Select between 1 and 24 photographs."
         )
 
-        lines.append(
-            "<code>"
-            + html.escape(result)
-            + "</code>"
+    allowed_types = {
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+    }
+
+    results = []
+
+    for index, photo in enumerate(photos, start=1):
+
+        if photo.mimetype not in allowed_types:
+
+            results.append({
+                "index": index,
+                "filename": photo.filename,
+                "url": None,
+                "error": "Unsupported image format.",
+            })
+
+            continue
+
+        app.logger.info(
+            "Starting image %s of %s",
+            index,
+            len(photos),
         )
 
-        if error:
+        image_url, error = upload_one_image(
+            access_token,
+            photo,
+        )
 
-            lines.append(
-                '<div class="error">'
-                "<strong>eBay error:</strong><br>"
-                + html.escape(error)
-                + "</div>"
+        results.append({
+            "index": index,
+            "filename": photo.filename,
+            "url": image_url,
+            "error": error,
+        })
+
+        if image_url:
+            app.logger.info(
+                "Image %s uploaded successfully",
+                index,
             )
 
-        lines.append("</li>")
+        else:
+            app.logger.error(
+                "Image %s failed: %s",
+                index,
+                (error or "")[:300],
+            )
 
-    lines.extend([
-        "</ol>",
-        '<p><a href="/">'
-        "Upload another item"
-        "</a></p>",
-        "</html>",
-    ])
-
-    return Response(
-        "".join(lines),
-        mimetype="text/html",
+    return render_template_string(
+        RESULTS_HTML,
+        results=results,
     )
 
 
+# ============================================================
+# RESULTS PAGE
+# ============================================================
+
+RESULTS_HTML = """
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+<title>eBay Photo Upload Results</title>
+
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 18px;
+    color: #222;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.photo {
+    padding: 18px;
+    margin: 18px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.success {
+    color: #18743a;
+}
+
+.error {
+    background: #fff1f1;
+    border: 1px solid #efc0c0;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.url {
+    display: block;
+    overflow-wrap: anywhere;
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 12px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #1559b7;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 14px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Photo Upload Results</h1>
+
+{% set successful = results
+    | selectattr("url")
+    | list
+%}
+
+<p>
+<strong>{{ successful | length }}</strong>
+of
+<strong>{{ results | length }}</strong>
+photographs uploaded successfully.
+</p>
+
+{% if successful %}
+
+<p>
+Your first successful photograph is the
+first image URL in the list below.
+</p>
+
+{% endif %}
+
+{% for item in results %}
+
+<div class="photo">
+
+<h3>
+{{ item.index }}.
+{{ item.filename }}
+</h3>
+
+{% if item.url %}
+
+<p class="success">
+Successfully uploaded
+</p>
+
+<a href="{{ item.url }}" target="_blank"
+   rel="noopener noreferrer">
+View photograph
+</a>
+
+<code class="url">
+{{ item.url }}
+</code>
+
+{% else %}
+
+<p>
+<strong>Upload failed</strong>
+</p>
+
+<div class="error">
+{{ item.error }}
+</div>
+
+{% endif %}
+
+</div>
+
+{% endfor %}
+
+<a class="button" href="{{ url_for('index') }}">
+Upload another photo
+</a>
+
+<p>
+<a href="{{ url_for('index') }}">
+Return to uploader
+</a>
+</p>
+
+</body>
+</html>
+"""
+
+
+# ============================================================
+# HEALTH CHECK
+# ============================================================
+
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "configured": bool(config_ready()),
+    }
+
+
+# ============================================================
+# LOCAL DEVELOPMENT
+# ============================================================
+
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", "5000")),
+        debug=False,
+    )
