@@ -83,3 +83,28 @@ connection checks require the seller to authorize the read-only account scope.
 `/validate` also accepts a ZIP with `listing.json` and a manifest `photos` array of ordered paths under `photos/`. Archives are never extracted; duplicate, unexpected, traversal, oversized and excessive entries are rejected. The existing Media API uploader hosts actual photographs first. Any photo failure stops before the listing check. The check remains VALIDATE-only. Seller-scoped `/validate/package` downloads the assembled manifest and returned photo URLs for catalog reconciliation; it contains no credentials. This in-memory download is lost on restart.
 
 Verification: 28 tests pass, including ordered ZIP handling, archive rejection, failed-photo short circuit, and session isolation for downloads. No live photo or listing check has run for this workflow yet.
+
+## Narrow approved-book scheduling test — 2026-11-15
+
+`/publish/kitcho` is a separate seller-authenticated, CSRF-protected action for
+MW-2026-296 at $29.95 plus calculated Media Mail, Best Offer on, scheduled
+2026-11-16T12:00:00Z (7 a.m. America/Detroit). Matt disclosed his desired day
+after the price was shown. `approved/kitcho.json` persists this exact intent,
+its payload digest and a stable 32-hex idempotency key. This is not a generic
+publisher: request bodies cannot choose an item, price or schedule.
+
+Before creation, search active and scheduled eBay listings by the approved SKU.
+Any incomplete or rejected search blocks creation. Existing matches are returned
+without a second creation. Revalidate with eBay, then send the approved EXECUTE
+request once. Every retry uses the same persisted key and first reconciles eBay
+state. Unknown outcomes do not trigger automatic retries. Retrieve listing ID,
+observed lifecycle state/start time, price, photos and quantity for the receipt.
+A creation response is not proof of a scheduled/live state. Receipt download is
+seller-session scoped. The assistant must reconcile the catalog from the receipt.
+
+No durable seller-token storage, external background job, new database or paid
+service is introduced. eBay holds the future schedule itself. The immutable
+approval file is a durable intent, not a durable outcome ledger; receipts remain
+in server memory until downloaded. General unattended publication and automatic
+catalog writeback still require the stronger storage/auth/reconciliation design
+above. Do not expand this test by accepting arbitrary file content for execution.
