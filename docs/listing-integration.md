@@ -1,5 +1,34 @@
 # Listing integration: first milestone
 
+## Remote validation milestone — 2026-11-15
+
+`/validate` accepts a file upload containing `format: crece-ebay-listing-v1`
+and `listing`, an eBay `CreateListingInput`. This is a prepared artifact, not
+something the seller should manually assemble. US, fixed-price, single-item
+packages are supported. The previously scheduled scale is excluded from tests.
+
+The server replaces both `options` and `idempotencyKey`; every request explicitly
+uses `VALIDATE`, with a fixed query and fixed eBay GraphQL endpoint. There is no
+EXECUTE path. Only `CreateListingValidationSuccess` counts as a pass. HTTP 200,
+GraphQL errors, missing data, and unexpected operation result types cannot pass.
+No automatic retries. No listing IDs are extracted or saved from validation.
+
+The separate **Connect eBay for listing checks** action requests `sell.listing`
+alongside inventory and account-read access. This permission itself supports
+listing writes; the deployed code restricts its use to validation. App keyset
+eligibility and a real seller validation remain unverified until the seller
+connects and checks a complete new-item package. Tokens are still process-local.
+
+Validation: 24 mocked unit/route tests; query parsed and validated against the
+official `/develop/api/spec/listing.graphqls` schema downloaded 2026-11-15.
+No real seller token or publishing call was used in development.
+
+Before enabling publication: owner authentication, encrypted durable seller-token
+storage, a durable per-SKU operation ledger, reconciliation after unknown outcomes,
+catalog writeback, and a complete live validation of a new item are still needed.
+Do not turn validation into execution by changing a default or accepting a file's
+mode. Build a distinct publishing action and persist its intent before sending.
+
 This branch extends the photo uploader with `/checks`, a read-only policy and
 category discovery page, plus **local** intake preflight. It has no listing
 creation, publishing, scheduling, revision, ending or inventory-write method.
