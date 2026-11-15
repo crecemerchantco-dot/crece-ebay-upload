@@ -9,6 +9,7 @@ import requests
 from PIL import Image, ImageOps, UnidentifiedImageError
 from flask import Flask, abort, redirect, render_template_string, request, session, url_for, Response
 from ebay_checks import ACCOUNT_SCOPE, BASE_SCOPE, CheckError, EbayChecks, preflight
+from ebay_listing import LISTING_SCOPE, MAX_PACKAGE_BYTES, load_package, validate_listing
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -81,6 +82,7 @@ def index():
 <p class="muted">Allow time for large batches. Images are temporarily accessible through hard-to-guess links so eBay can retrieve them. This does not publish a listing.</p></section>
 <form action="{{ url_for('disconnect') }}" method="post"><button type="submit">Disconnect eBay</button></form>
 {% endif %}<p><a href="{{ url_for('checks') }}">Check listing connection</a></p>
+<p><a href="{{ url_for('listing_validation') }}">Check a prepared listing with eBay</a></p>
 <p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
 ''', ready=configured(), connected=bool(access_token()) if configured() else False)
 
@@ -92,7 +94,7 @@ def health():
 
 @app.get('/privacy')
 def privacy():
-    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Prepared item JSON is checked locally and is not submitted to eBay for listing creation.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. This app does not publish listings.</p><p>Contact: crecemerchantco@gmail.com</p>''')
+    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Local intake checks stay within this app. If you enable listing checks and upload a prepared listing package, its product and selling details are sent to eBay in validation-only mode. This requires eBay listing permission, but this version does not send publishing requests.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. This app does not publish listings.</p><p>Contact: crecemerchantco@gmail.com</p>''')
 
 
 @app.get('/login')
@@ -102,8 +104,13 @@ def login():
     state = secrets.token_urlsafe(32)
     session['oauth_state'] = state
     scope = SCOPE
-    if request.args.get('checks') == '1':
+    if request.args.get('checks') == '1' or request.args.get('validation') == '1':
         scope += ' ' + ACCOUNT_SCOPE
+    if request.args.get('validation') == '1':
+        scope += ' ' + LISTING_SCOPE
+        session['oauth_destination'] = 'listing_validation'
+    else:
+        session.pop('oauth_destination', None)
     session['requested_scope'] = scope
     params = {'client_id': os.environ['EBAY_CLIENT_ID'], 'response_type': 'code',
               'redirect_uri': os.environ['EBAY_RUNAME'], 'scope': scope, 'state': state}
@@ -131,7 +138,47 @@ def callback():
     TOKENS[sid] = {'access_token': data['access_token'], 'refresh_token': data.get('refresh_token'),
                    'expires': time.time() + data['expires_in'],
                    'scope': data.get('scope', session.pop('requested_scope', SCOPE))}
-    return redirect(url_for('index'))
+    return redirect(url_for(session.pop('oauth_destination', 'index')))
+
+
+@app.route('/validate', methods=['GET', 'POST'])
+def listing_validation():
+    token = access_token() if configured() else None
+    entry = TOKENS.get(session.get('sid'), {})
+    authorized = bool(token) and LISTING_SCOPE in entry.get('scope', '').split()
+    if request.method == 'POST':
+        if not authorized:
+            abort(401, 'Connect eBay for listing checks first.')
+        expected = session.get('validation_csrf', '')
+        if not expected or not secrets.compare_digest(expected, request.form.get('csrf', '')):
+            abort(403, 'Reload the listing check page and try again.')
+        upload = request.files.get('package')
+        try:
+            prepared = load_package(upload.read(MAX_PACKAGE_BYTES + 1) if upload else b'')
+        except ValueError as exc:
+            return page('Listing package needs attention', '<p>{{ error }}</p><p><a href="{{ url_for(\'listing_validation\') }}">Choose another package</a></p>', error=str(exc)), 400
+        result = validate_listing(token, prepared)
+        return page('eBay listing check', '''
+<p><strong>{{ title_text }}</strong></p><p>Catalog number: {{ sku }}</p>
+<p class="{{ 'ok' if result.ok else 'bad' }}"><strong>{{ 'eBay validation passed' if result.ok else 'Listing needs attention' }}</strong></p>
+{% for error in result.errors %}<p>{{ error }}</p>{% endfor %}
+{% for warning in result.warnings %}<p>{{ warning }}</p>{% endfor %}
+<p>This check did not publish or schedule a listing. Passing this check does not reserve a listing or guarantee a later submission.</p>
+<p><a href="{{ url_for('listing_validation') }}">Check another listing</a></p>
+''', title_text=prepared['product']['title'], sku=prepared['sku'], result=result)
+    session.setdefault('validation_csrf', secrets.token_urlsafe(32))
+    return page('Check a prepared listing', '''
+<p>Upload the listing package prepared for your item. eBay will check its details without putting it up for sale.</p>
+{% if not ready %}<p>Application configuration is incomplete.</p>
+{% elif not authorized %}
+<p>eBay requires listing access even for this check. This version of the app sends validation requests only.</p>
+<p><a class="button" href="{{ url_for('login', validation='1') }}">Connect eBay for listing checks</a></p>
+{% else %}<form method="post" enctype="multipart/form-data">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<label>Listing package <input type="file" name="package" accept=".json,application/json" required></label>
+<p><button type="submit">Check with eBay</button></p></form>{% endif %}
+<p>No listing will be published or scheduled. Your seller connection may need to be renewed after an app restart.</p>
+''', ready=configured(), authorized=authorized, csrf=session['validation_csrf'])
 
 
 def application_token():
