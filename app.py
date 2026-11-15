@@ -13,6 +13,7 @@ from ebay_checks import ACCOUNT_SCOPE, BASE_SCOPE, CheckError, EbayChecks, prefl
 from ebay_listing import LISTING_SCOPE, MAX_BUNDLE_BYTES, load_upload, validate_listing
 from ebay_publish import PublishError, approval, schedule_approved_book
 from resale_routes import register as register_resale, owner_signed_in, setup_ready
+from approved_sales import register as register_approved
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -485,6 +486,7 @@ def upload():
 
 
 register_resale(app, page, access_token, TOKENS, configured, upload_image_from_url)
+register_approved(app, page, access_token, TOKENS, configured)
 
 
 if __name__ == '__main__':
