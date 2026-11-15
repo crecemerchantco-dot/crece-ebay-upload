@@ -77,9 +77,16 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(result['catalog_state'], 'pending')
         self.catalog.write_receipt.side_effect = None
         self.http.reset_mock()
+        self.http.post.side_effect = [self.success()[-1]]
         result = run('secret', self.item, self.journal, self.catalog, self.http, NOW, reconcile_only=True)
-        self.http.post.assert_not_called()
+        self.assertEqual(self.http.post.call_count, 1)
+        self.assertIn('sellerListings', self.http.post.call_args.kwargs['json']['query'])
         self.assertEqual(result['catalog_state'], 'saved')
+        self.http.reset_mock()
+        self.catalog.reset_mock()
+        run('secret', self.item, self.journal, self.catalog, self.http, NOW, reconcile_only=True)
+        self.http.post.assert_not_called()
+        self.catalog.write_receipt.assert_not_called()
 
     def test_timeout_is_durable_and_repeat_only_searches(self):
         self.http.post.side_effect = self.success()[:2] + [requests.Timeout()]

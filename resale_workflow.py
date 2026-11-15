@@ -142,7 +142,11 @@ def run(token, item, journal, catalog, http=None, now=None, reconcile_only=False
             # Recovery always uses the saved original, never a re-uploaded payload.
             item = record['listing']
             if record['state'] == 'verified':
-                return sync_catalog(record, entry, catalog)
+                if record.get('catalog_state') == 'saved':
+                    return record
+                # Refresh pending receipts before writeback so yesterday’s
+                # scheduled observation cannot overwrite today’s active state.
+                return finish(token, item, record, record['listing_id'], entry, catalog, http, stamp)
             if record['state'] in ('submitting', 'accepted', 'unknown', 'existing'):
                 candidates = [record['listing_id']] if record.get('listing_id') else find_existing(token, item['sku'], http)
                 if not candidates:
