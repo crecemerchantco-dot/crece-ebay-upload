@@ -1,4 +1,5 @@
 import io
+import json
 import os
 import secrets
 import time
@@ -7,6 +8,7 @@ from urllib.parse import urlencode
 import requests
 from PIL import Image, ImageOps, UnidentifiedImageError
 from flask import Flask, abort, redirect, render_template_string, request, session, url_for, Response
+from ebay_checks import ACCOUNT_SCOPE, BASE_SCOPE, CheckError, EbayChecks, preflight
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -19,6 +21,7 @@ MEDIA_API = 'https://apim.ebay.com'  # Verified working URL-upload host
 SCOPE = 'https://api.ebay.com/oauth/api_scope/sell.inventory'
 MEDIA_URL = MEDIA_API + '/commerce/media/v1_beta/image/create_image_from_url'
 TOKENS = {}  # Reconnect after a Render restart.
+APP_TOKEN = {}  # Application-only category metadata; never returned to clients.
 TEMP_IMAGES = {}  # Private-to-app memory; public only through unpredictable links, expires after 30 min.
 TEMP_TTL = 30 * 60
 MAX_PHOTOS = 24
@@ -46,7 +49,7 @@ def access_token():
         return None
     try:
         response = requests.post(API + '/identity/v1/oauth2/token', auth=credentials(),
-                                 data={'grant_type': 'refresh_token', 'refresh_token': entry['refresh_token'], 'scope': SCOPE}, timeout=25)
+                                 data={'grant_type': 'refresh_token', 'refresh_token': entry['refresh_token']}, timeout=25)
         response.raise_for_status()
         data = response.json()
         entry.update(access_token=data['access_token'], expires=time.time() + data['expires_in'])
@@ -60,7 +63,9 @@ def access_token():
 
 def page(title, content, **context):
     template = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ title }}</title><style>''' + STYLE + '''</style></head><body><h1>{{ title }}</h1>''' + content + '''<p><a href="{{ url_for('index') }}">Return to uploader</a></p></body></html>'''
-    return render_template_string(template, title=title, **context)
+    response = Response(render_template_string(template, title=title, **context))
+    response.headers['Cache-Control'] = 'no-store'
+    return response
 
 
 @app.get('/')
@@ -75,7 +80,8 @@ def index():
 <p><button type="submit">Upload photographs to eBay</button></p></form>
 <p class="muted">Allow time for large batches. Images are temporarily accessible through hard-to-guess links so eBay can retrieve them. This does not publish a listing.</p></section>
 <form action="{{ url_for('disconnect') }}" method="post"><button type="submit">Disconnect eBay</button></form>
-{% endif %}<p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
+{% endif %}<p><a href="{{ url_for('checks') }}">Check listing connection</a></p>
+<p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
 ''', ready=configured(), connected=bool(access_token()) if configured() else False)
 
 
@@ -86,7 +92,7 @@ def health():
 
 @app.get('/privacy')
 def privacy():
-    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. This app does not publish listings.</p><p>Contact: crecemerchantco@gmail.com</p>''')
+    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Prepared item JSON is checked locally and is not submitted to eBay for listing creation.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. This app does not publish listings.</p><p>Contact: crecemerchantco@gmail.com</p>''')
 
 
 @app.get('/login')
@@ -95,8 +101,12 @@ def login():
         abort(503, 'Missing Render environment variables')
     state = secrets.token_urlsafe(32)
     session['oauth_state'] = state
+    scope = SCOPE
+    if request.args.get('checks') == '1':
+        scope += ' ' + ACCOUNT_SCOPE
+    session['requested_scope'] = scope
     params = {'client_id': os.environ['EBAY_CLIENT_ID'], 'response_type': 'code',
-              'redirect_uri': os.environ['EBAY_RUNAME'], 'scope': SCOPE, 'state': state}
+              'redirect_uri': os.environ['EBAY_RUNAME'], 'scope': scope, 'state': state}
     return redirect('https://auth.ebay.com/oauth2/authorize?' + urlencode(params))
 
 
@@ -119,8 +129,102 @@ def callback():
     sid = secrets.token_urlsafe(32)
     session['sid'] = sid
     TOKENS[sid] = {'access_token': data['access_token'], 'refresh_token': data.get('refresh_token'),
-                   'expires': time.time() + data['expires_in']}
+                   'expires': time.time() + data['expires_in'],
+                   'scope': data.get('scope', session.pop('requested_scope', SCOPE))}
     return redirect(url_for('index'))
+
+
+def application_token():
+    if APP_TOKEN.get('expires', 0) > time.time() + 90:
+        return APP_TOKEN['token']
+    try:
+        response = requests.post(API + '/identity/v1/oauth2/token', auth=credentials(),
+                                 data={'grant_type': 'client_credentials', 'scope': BASE_SCOPE},
+                                 timeout=(5, 20), allow_redirects=False)
+        if response.status_code != 200:
+            raise CheckError(response.status_code)
+        data = response.json()
+        token = data['access_token']
+        if not isinstance(token, str) or not token:
+            raise ValueError()
+        APP_TOKEN.update(token=token, expires=time.time() + int(data['expires_in']))
+        return token
+    except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
+        raise CheckError() from exc
+
+
+@app.get('/checks')
+def checks():
+    return page('Listing connection checks', '''
+<p>Check your saved policies and the current category requirements before preparing a listing.</p>
+<p>This first stage does not create or schedule listings.</p>
+{% if not ready %}<p>Application configuration is incomplete.</p>
+{% elif not connected %}<p><a class="button" href="{{ url_for('login', checks='1') }}">Connect eBay for checks</a></p>
+{% else %}<p><a class="button" href="{{ url_for('check_policies') }}">Read my shipping and return policies</a></p>
+<form action="{{ url_for('check_category') }}" method="get">
+<label>eBay category number <input name="category_id" required inputmode="numeric" pattern="[0-9]+"></label>
+<button type="submit">Check category requirements</button></form>
+<p><a href="{{ url_for('login', checks='1') }}">Reconnect if eBay reports missing permissions</a></p>
+{% endif %}''', ready=configured(), connected=bool(access_token()) if configured() else False)
+
+
+def check_token():
+    token = access_token()
+    if not token:
+        abort(401, 'Connect your eBay account to use listing checks.')
+    return token
+
+
+@app.get('/checks/policies')
+def check_policies():
+    result = EbayChecks(check_token()).policies()
+    return page('Your eBay listing policies', '''
+{% for kind, result in policies.items() %}<section><h2>{{ kind|capitalize }}</h2>
+{% if result.ok %}<ul>{% for p in result.policies %}<li>{{ p.name }} — {{ p.id }}</li>{% else %}<li>No policies returned.</li>{% endfor %}</ul>
+{% else %}<p>{{ result.error }}</p>{% endif %}</section>{% endfor %}
+<p>These checks have not changed your account or listings.</p>''', policies=result)
+
+
+@app.get('/checks/category')
+def check_category():
+    token = check_token()
+    try:
+        result = EbayChecks(token, application_token()).category(request.args.get('category_id', ''))
+    except ValueError as exc:
+        abort(400, str(exc))
+    except CheckError as exc:
+        return page('Category check unavailable', '<p>{{ error }}</p>', error=str(exc)), 502
+    session.setdefault('preflight_csrf', secrets.token_urlsafe(32))
+    return page('eBay category requirements', '''
+<p>Category {{ result.categoryId }}. Requirements read directly from eBay.</p>
+<ul>{% for a in result.aspects %}<li>{{ a.localizedAspectName }} — {% if a.aspectConstraint.aspectRequired %}required{% else %}recommended or optional{% endif %}</li>{% else %}<li>No item specifics returned.</li>{% endfor %}</ul>
+<p>Developer check: paste a prepared item JSON record below to check basic fields and required specifics. This is local preflight, not eBay listing acceptance.</p>
+<form method="post" action="{{ url_for('check_preflight') }}">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="category_id" value="{{ result.categoryId }}">
+<label>Prepared item JSON <textarea name="item" rows="12" style="width:100%" required></textarea></label>
+<button type="submit">Run local preflight</button></form>''', result=result, csrf=session['preflight_csrf'])
+
+
+@app.post('/checks/preflight')
+def check_preflight():
+    token = check_token()
+    expected = session.get('preflight_csrf', '')
+    if not expected or not secrets.compare_digest(expected, request.form.get('csrf', '')):
+        abort(403, 'Reload category requirements before running a check.')
+    try:
+        item = json.loads(request.form.get('item', ''))
+        category = EbayChecks(token, application_token()).category(request.form.get('category_id', ''))
+        result = preflight(item, category)
+    except (ValueError, TypeError) as exc:
+        return page('Invalid preflight input', '<p>{{ error }}</p>', error=str(exc)), 400
+    except CheckError as exc:
+        return page('Preflight unavailable', '<p>{{ error }}</p>', error=str(exc)), 502
+    return page('Local preflight results', '''
+<p>{% if result.ok %}Basic checks passed. eBay validation is still required.{% else %}Correct the following fields.{% endif %}</p>
+<ul>{% for error in result.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+<ul>{% for warning in result.warnings %}<li>{{ warning }}</li>{% endfor %}</ul>
+<p>No listing was created or scheduled.</p>''', result=result)
 
 
 @app.get('/oauth/declined')
