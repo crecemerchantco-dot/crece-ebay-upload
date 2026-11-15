@@ -77,3 +77,9 @@ entitlements and endpoint compatibility still require a deployed test.
 Repository: `crecemerchantco-dot/crece-ebay-upload`. The Render main branch
 auto-deploys. Use a feature branch and review tests before merging. Live eBay
 connection checks require the seller to authorize the read-only account scope.
+
+## Bundled photo upload
+
+`/validate` also accepts a ZIP with `listing.json` and a manifest `photos` array of ordered paths under `photos/`. Archives are never extracted; duplicate, unexpected, traversal, oversized and excessive entries are rejected. The existing Media API uploader hosts actual photographs first. Any photo failure stops before the listing check. The check remains VALIDATE-only. Seller-scoped `/validate/package` downloads the assembled manifest and returned photo URLs for catalog reconciliation; it contains no credentials. This in-memory download is lost on restart.
+
+Verification: 28 tests pass, including ordered ZIP handling, archive rejection, failed-photo short circuit, and session isolation for downloads. No live photo or listing check has run for this workflow yet.

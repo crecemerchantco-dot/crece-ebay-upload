@@ -8,8 +8,9 @@ from urllib.parse import urlencode
 import requests
 from PIL import Image, ImageOps, UnidentifiedImageError
 from flask import Flask, abort, redirect, render_template_string, request, session, url_for, Response
+from werkzeug.datastructures import FileStorage
 from ebay_checks import ACCOUNT_SCOPE, BASE_SCOPE, CheckError, EbayChecks, preflight
-from ebay_listing import LISTING_SCOPE, MAX_PACKAGE_BYTES, load_package, validate_listing
+from ebay_listing import LISTING_SCOPE, MAX_BUNDLE_BYTES, load_upload, validate_listing
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -154,9 +155,19 @@ def listing_validation():
             abort(403, 'Reload the listing check page and try again.')
         upload = request.files.get('package')
         try:
-            prepared = load_package(upload.read(MAX_PACKAGE_BYTES + 1) if upload else b'')
+            prepared, photos = load_upload(upload.read(MAX_BUNDLE_BYTES + 1) if upload else b'')
         except ValueError as exc:
             return page('Listing package needs attention', '<p>{{ error }}</p><p><a href="{{ url_for(\'listing_validation\') }}">Choose another package</a></p>', error=str(exc)), 400
+        entry.pop('prepared_listing', None)
+        if photos:
+            urls = []
+            for name, data in photos:
+                photo_result = upload_image_from_url(token, FileStorage(stream=io.BytesIO(data), filename=name))
+                if not photo_result.get('url'):
+                    return page('Photograph upload needs attention', '<p>eBay did not accept photograph {{ number }}. No listing validation or publishing request was sent.</p><p><a href="{{ url_for(\'listing_validation\') }}">Try the package again</a></p>', number=len(urls) + 1), 502
+                urls.append(photo_result['url'])
+            prepared['product']['imageUrls'] = urls
+        entry['prepared_listing'] = prepared
         result = validate_listing(token, prepared)
         return page('eBay listing check', '''
 <p><strong>{{ title_text }}</strong></p><p>Catalog number: {{ sku }}</p>
@@ -164,8 +175,10 @@ def listing_validation():
 {% for error in result.errors %}<p>{{ error }}</p>{% endfor %}
 {% for warning in result.warnings %}<p>{{ warning }}</p>{% endfor %}
 <p>This check did not publish or schedule a listing. Passing this check does not reserve a listing or guarantee a later submission.</p>
+<p>{{ photo_count }} eBay-hosted photographs attached.</p>
+<p><a href="{{ url_for('download_checked_package') }}">Download listing details and photo links</a></p>
 <p><a href="{{ url_for('listing_validation') }}">Check another listing</a></p>
-''', title_text=prepared['product']['title'], sku=prepared['sku'], result=result)
+''', title_text=prepared['product']['title'], sku=prepared['sku'], result=result, photo_count=len(prepared['product'].get('imageUrls', [])))
     session.setdefault('validation_csrf', secrets.token_urlsafe(32))
     return page('Check a prepared listing', '''
 <p>Upload the listing package prepared for your item. eBay will check its details without putting it up for sale.</p>
@@ -175,10 +188,23 @@ def listing_validation():
 <p><a class="button" href="{{ url_for('login', validation='1') }}">Connect eBay for listing checks</a></p>
 {% else %}<form method="post" enctype="multipart/form-data">
 <input type="hidden" name="csrf" value="{{ csrf }}">
-<label>Listing package <input type="file" name="package" accept=".json,application/json" required></label>
+<label>Listing package <input type="file" name="package" accept=".zip,.json,application/zip,application/json" required></label>
+<p>A package can include your photographs. They will be uploaded to eBay automatically before the check. Allow time for the upload to finish.</p>
 <p><button type="submit">Check with eBay</button></p></form>{% endif %}
 <p>No listing will be published or scheduled. Your seller connection may need to be renewed after an app restart.</p>
 ''', ready=configured(), authorized=authorized, csrf=session['validation_csrf'])
+
+
+@app.get('/validate/package')
+def download_checked_package():
+    if not access_token():
+        abort(401)
+    prepared = TOKENS.get(session.get('sid'), {}).get('prepared_listing')
+    if not prepared:
+        abort(404)
+    return Response(json.dumps({'format': 'crece-ebay-listing-v1', 'listing': prepared}, indent=2),
+                    mimetype='application/json', headers={'Cache-Control': 'no-store',
+                    'Content-Disposition': 'attachment; filename="' + prepared['sku'] + '_checked.json"'})
 
 
 def application_token():

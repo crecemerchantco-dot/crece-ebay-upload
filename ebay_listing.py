@@ -1,14 +1,17 @@
 """eBay Listing API validation only. No execution or publishing entry point."""
 import copy
+import io
 import json
 import re
 import secrets
+import zipfile
 
 import requests
 
 LISTING_SCOPE = 'https://api.ebay.com/oauth/api_scope/sell.listing'
 GRAPHQL_URL = 'https://graphqlapi.ebay.com/graphql'
 MAX_PACKAGE_BYTES = 256 * 1024
+MAX_BUNDLE_BYTES = 64 * 1024 * 1024
 VALIDATE_QUERY = '''mutation ValidateListing($input: CreateListingInput!) {
   createListing(input: $input) {
     __typename
@@ -61,6 +64,41 @@ def load_package(raw):
     prepared['options'] = {'operationMode': 'VALIDATE'}
     prepared['idempotencyKey'] = secrets.token_hex(16)
     return prepared
+
+
+def load_upload(raw):
+    """Read a manifest and ordered real photographs; never extract an archive."""
+    if not raw or len(raw) > MAX_BUNDLE_BYTES:
+        raise ValueError('Choose a listing package smaller than 64 MB.')
+    if not raw.startswith(b'PK'):
+        return load_package(raw), []
+    try:
+        with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+            entries = archive.infolist()
+            names = [e.filename for e in entries]
+            if len(names) != len(set(names)) or len(names) > 25:
+                raise ValueError('The package has duplicate files or too many photographs.')
+            if sum(e.file_size for e in entries) > MAX_BUNDLE_BYTES:
+                raise ValueError('The expanded package is too large.')
+            if 'listing.json' not in names or archive.getinfo('listing.json').file_size > MAX_PACKAGE_BYTES:
+                raise ValueError('The package is missing its listing details.')
+            manifest = archive.read('listing.json')
+            prepared = load_package(manifest)
+            paths = json.loads(manifest).get('photos')
+            if not isinstance(paths, list) or not 1 <= len(paths) <= 24 or len(set(paths)) != len(paths):
+                raise ValueError('The package needs 1–24 ordered photographs.')
+            if set(names) != {'listing.json', *paths}:
+                raise ValueError('The package contains unexpected files.')
+            photos = []
+            for path in paths:
+                if not isinstance(path, str) or not re.fullmatch(r'photos/[A-Za-z0-9_-]+\.(jpg|jpeg|png)', path):
+                    raise ValueError('The package contains an invalid photograph path.')
+                if not 0 < archive.getinfo(path).file_size <= 10 * 1024 * 1024:
+                    raise ValueError('Each photograph must be smaller than 10 MB.')
+                photos.append((path.rsplit('/', 1)[-1], archive.read(path)))
+            return prepared, photos
+    except (zipfile.BadZipFile, KeyError, RuntimeError, TypeError, NotImplementedError):
+        raise ValueError('The listing package could not be read. Ask for a replacement file.') from None
 
 
 def validate_listing(seller_token, prepared, http=None):
