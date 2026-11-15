@@ -12,6 +12,7 @@ from werkzeug.datastructures import FileStorage
 from ebay_checks import ACCOUNT_SCOPE, BASE_SCOPE, CheckError, EbayChecks, preflight
 from ebay_listing import LISTING_SCOPE, MAX_BUNDLE_BYTES, load_upload, validate_listing
 from ebay_publish import PublishError, approval, schedule_approved_book
+from resale_routes import register as register_resale, owner_signed_in, setup_ready
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -85,6 +86,7 @@ def index():
 <form action="{{ url_for('disconnect') }}" method="post"><button type="submit">Disconnect eBay</button></form>
 {% endif %}<p><a href="{{ url_for('checks') }}">Check listing connection</a></p>
 <p><a href="{{ url_for('listing_validation') }}">Check a prepared listing with eBay</a></p>
+<p><a href="{{ url_for('resale_home') }}">Open my resale workspace</a></p>
 <p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
 ''', ready=configured(), connected=bool(access_token()) if configured() else False)
 
@@ -96,7 +98,7 @@ def health():
 
 @app.get('/privacy')
 def privacy():
-    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Local intake checks stay within this app. If you enable listing checks and upload a prepared listing package, its product and selling details are sent to eBay in validation-only mode. This requires eBay listing permission, but this version does not send publishing requests.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. Listing checks do not publish. A separate scheduling page can create the specifically approved Kitcho book listing only after an authenticated seller submits that action. Its approved product details and creation key are stored in the application repository; seller tokens remain in process memory. Scheduling results can be downloaded by the seller for catalog reconciliation.</p><p>Contact: crecemerchantco@gmail.com</p>''')
+    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Local intake checks stay within this app. If you enable listing checks and upload a prepared listing package, its product and selling details are sent to eBay in validation-only mode. This requires eBay listing permission, without creating a listing during that check.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. Listing checks do not publish. A separate scheduling page can create the specifically approved Kitcho book listing only after an authenticated seller submits that action. Its approved product details and creation key are stored in the application repository; seller tokens remain in process memory. Scheduling results can be downloaded by the seller for catalog reconciliation. The private resale workspace requires an owner password and separate catalog connection. When configured, it records approved listing details, validation results, eBay IDs and receipts in a durable database and writes verified listing results to the master catalog. It does not store seller OAuth credentials in that database.</p><p>Contact: crecemerchantco@gmail.com</p>''')
 
 
 @app.get('/login')
@@ -106,12 +108,15 @@ def login():
     state = secrets.token_urlsafe(32)
     session['oauth_state'] = state
     scope = SCOPE
-    publish = request.args.get('publish') == 'kitcho'
+    publish_kind = request.args.get('publish')
+    publish = publish_kind in ('kitcho', 'resale')
+    if publish_kind == 'resale' and (not owner_signed_in() or not setup_ready()):
+        abort(403, 'Open your private resale workspace first.')
     if request.args.get('checks') == '1' or request.args.get('validation') == '1' or publish:
         scope += ' ' + ACCOUNT_SCOPE
     if request.args.get('validation') == '1' or publish:
         scope += ' ' + LISTING_SCOPE
-        session['oauth_destination'] = 'publish_kitcho' if publish else 'listing_validation'
+        session['oauth_destination'] = ('resale_home' if publish_kind == 'resale' else 'publish_kitcho') if publish else 'listing_validation'
     else:
         session.pop('oauth_destination', None)
     session['requested_scope'] = scope
@@ -171,6 +176,7 @@ def listing_validation():
             prepared['product']['imageUrls'] = urls
         entry['prepared_listing'] = prepared
         result = validate_listing(token, prepared)
+        entry['validation_result'] = result
         return page('eBay listing check', '''
 <p><strong>{{ title_text }}</strong></p><p>Catalog number: {{ sku }}</p>
 <p class="{{ 'ok' if result.ok else 'bad' }}"><strong>{{ 'eBay validation passed' if result.ok else 'Listing needs attention' }}</strong></p>
@@ -204,7 +210,7 @@ def download_checked_package():
     prepared = TOKENS.get(session.get('sid'), {}).get('prepared_listing')
     if not prepared:
         abort(404)
-    return Response(json.dumps({'format': 'crece-ebay-listing-v1', 'listing': prepared}, indent=2),
+    return Response(json.dumps({'format': 'crece-ebay-listing-v1', 'listing': prepared, 'validation': TOKENS.get(session.get('sid'), {}).get('validation_result')}, indent=2),
                     mimetype='application/json', headers={'Cache-Control': 'no-store',
                     'Content-Disposition': 'attachment; filename="' + prepared['sku'] + '_checked.json"'})
 
@@ -476,6 +482,9 @@ def upload():
 {% else %}<p class="bad">Upload not confirmed</p><pre>{{ item | tojson(indent=2) }}</pre>{% endif %}</section>{% endfor %}
 <a class="button" href="{{ url_for('index') }}">Upload more photos</a>
 ''', results=results, urls=urls)
+
+
+register_resale(app, page, access_token, TOKENS, configured, upload_image_from_url)
 
 
 if __name__ == '__main__':
