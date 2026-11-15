@@ -16,7 +16,10 @@ from ebay_publish import PublishError, post, verify, CREATE_QUERY
 from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
-APPROVED = {'mug-321': ('room-essentials-mug.json', 'MW-2026-321', '8.95', '2026-11-17T12:00:00Z')}
+APPROVED = {
+    'mug-321': ('room-essentials-mug.json', 'MW-2026-321', '8.95', '2026-11-17T12:00:00Z'),
+    'babbitt-292': ('babbitt.json', 'MW-2026-292', '19.95', '2026-11-18T12:00:00Z'),
+}
 LOCK = threading.Lock()
 
 
@@ -101,8 +104,8 @@ def register(app, page, access_token, tokens, configured):
 <p>Reconcile this receipt with the master catalog. Do not create another listing for this item.</p>''', result=result, life=life, code=code)
         return page('Schedule approved item', '''
 <p><strong>{{ approved.listing.product.title }}</strong></p><p>{{ approved.inventory_id }}</p>
-<p>Approved price: <strong>${{ approved.price_disclosed }}</strong> plus buyer-paid calculated USPS Ground Advantage shipping. Best Offer enabled; automatic acceptance and decline off. 30-day buyer-paid returns.</p>
-<p>Approved start: <strong>Tuesday, November 17, 2026 at 7 a.m. Eastern</strong>.</p>
+<p>Approved price: <strong>${{ approved.price_disclosed }}</strong> {{ approved.get('shipping_description', 'plus buyer-paid calculated USPS Ground Advantage shipping') }}. Best Offer enabled; automatic acceptance and decline off. 30-day buyer-paid returns.</p>
+<p>Approved start: <strong>{{ approved.get('publication_label', 'Tuesday, November 17, 2026 at 7 a.m. Eastern') }}</strong>.</p>
 {% if authorized %}<form method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><button>Schedule the approved item</button></form>
 {% else %}<p><a href="{{ url_for('login', validation='1') }}">Connect eBay for listing checks</a>, then return to this page.</p>{% endif %}
 <p>This manual flow uses a committed item-specific creation key and eBay duplicate checks. Receipts remain in memory until downloaded; catalog reconciliation is handled in chat.</p>''', approved=approved, authorized=authorized, csrf=session['approved_csrf'])

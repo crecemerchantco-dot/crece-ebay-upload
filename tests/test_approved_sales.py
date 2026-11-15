@@ -42,3 +42,27 @@ class ApprovedSaleTests(unittest.TestCase):
         payload = post.call_args.args[2]['input']
         self.assertEqual(payload,load_approval('mug-321')['listing'])
         self.assertEqual(post.call_count,1)
+
+    def test_babbitt_approval_is_separate_from_mug(self):
+        b = load_approval('babbitt-292')
+        self.assertEqual(b['listing']['sku'], 'MW-2026-292')
+        self.assertEqual(b['listing']['listingItems']['items'][0]['itemTerms']['pricingTerms']['fixedPrice'], '19.95')
+        self.assertEqual(b['listing']['listingTerms']['lifecycleTerms']['scheduledToStartAt'], '2026-11-18T12:00:00Z')
+        self.assertEqual(b['listing']['listingTerms']['fulfillmentTerms']['shippingTerms']['businessPolicy']['businessPolicyId'], '283364951018')
+        self.assertEqual(len(b['listing']['product']['imageUrls']), 8)
+        self.assertNotEqual(b['listing']['idempotencyKey'], load_approval('mug-321')['listing']['idempotencyKey'])
+
+    def test_babbitt_page_displays_its_own_shipping_and_day(self):
+        from flask import Flask, render_template_string
+        from approved_sales import register
+        app = Flask(__name__)
+        app.secret_key = 'test-only'
+        app.add_url_rule('/login', 'login', lambda: '')
+        register(app, lambda title, template, **kw: render_template_string(template, **kw), lambda: 'token', {'test': {'scope': ''}}, lambda: True)
+        response = app.test_client().get('/publish/approved/babbitt-292')
+        self.assertEqual(response.status_code, 200)
+        text = response.get_data(as_text=True)
+        self.assertIn('Wednesday, November 18, 2026 at 7 a.m. Eastern', text)
+        self.assertIn('USPS Media Mail', text)
+        self.assertNotIn('Ground Advantage', text)
+        self.assertNotIn('Tuesday', text)
