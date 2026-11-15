@@ -19,6 +19,7 @@ from listing_terms import selected_policies
 APPROVED = {
     'mug-321': ('room-essentials-mug.json', 'MW-2026-321', '8.95', '2026-11-17T12:00:00Z'),
     'babbitt-292': ('babbitt.json', 'MW-2026-292', '19.95', '2026-11-18T12:00:00Z'),
+    'chile-291': ('green-chile-bible.json', 'MW-2026-291', '4.95', '2026-11-19T12:00:00Z'),
 }
 LOCK = threading.Lock()
 

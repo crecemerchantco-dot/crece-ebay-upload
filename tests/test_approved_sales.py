@@ -66,3 +66,17 @@ class ApprovedSaleTests(unittest.TestCase):
         self.assertIn('USPS Media Mail', text)
         self.assertNotIn('Ground Advantage', text)
         self.assertNotIn('Tuesday', text)
+
+    def test_chile_approval_preserves_disclosed_price_time_and_estimate(self):
+        c = load_approval('chile-291')
+        item = c['listing']
+        self.assertEqual(item['sku'], 'MW-2026-291')
+        self.assertEqual(item['listingItems']['items'][0]['itemTerms']['pricingTerms']['fixedPrice'], '4.95')
+        self.assertEqual(item['listingTerms']['lifecycleTerms']['scheduledToStartAt'], '2026-11-19T12:00:00Z')
+        fulfillment = item['listingTerms']['fulfillmentTerms']
+        self.assertEqual(fulfillment['shippingTerms']['businessPolicy']['businessPolicyId'], '283364951018')
+        self.assertEqual(fulfillment['packageSpecifications']['packageWeight'], {'majorUnit':1,'minorUnit':4})
+        self.assertEqual(len(item['product']['imageUrls']), 9)
+        self.assertIn('Handwritten', item['product']['itemCondition']['conditionDescription'])
+        self.assertIn('not represented as a first printing', item['product']['description'])
+        self.assertNotEqual(item['idempotencyKey'], load_approval('babbitt-292')['listing']['idempotencyKey'])
