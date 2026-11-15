@@ -108,3 +108,73 @@ approval file is a durable intent, not a durable outcome ledger; receipts remain
 in server memory until downloaded. General unattended publication and automatic
 catalog writeback still require the stronger storage/auth/reconciliation design
 above. Do not expand this test by accepting arbitrary file content for execution.
+
+## Reusable private workspace (`/sell`)
+
+The Kitcho route remains a separate, immutable prior test. The reusable workspace
+is disabled until all three settings are present:
+
+- `APP_ACCESS_PASSWORD_HASH`: Werkzeug password hash of a strong owner password.
+  Generate locally with `werkzeug.security.generate_password_hash`; keep both the
+  password and hash out of this repository. Enter the hash privately in Render.
+- `LISTING_DATABASE_URL`: PostgreSQL connection URL for a dedicated receipt journal.
+  For a Render database use the internal connection URL in the same workspace and
+  region (Virginia). No fallback to ephemeral SQLite or process-memory receipts.
+- `GOOGLE_SERVICE_ACCOUNT_JSON`: a dedicated Google service account credential,
+  entered privately in Render. Enable Google Sheets API in its Google Cloud
+  project. Share only master spreadsheet
+  `17NcKyscAKXdIbUDoWJsMLFNewUehYzjcrnJSCfliUW8` with that account's email as Editor.
+  Do not enable domain-wide delegation. Do not paste its private key into chat.
+
+No new paid resource is provisioned by this change. Confirm the price in Render
+before creating a database. At implementation time the smallest paid Postgres
+compute is $6/month plus $0.30/GB/month storage; verify current pricing at setup.
+The free web service can remain unchanged. A free expiring database is unsuitable
+as the permanent submission journal.
+
+The workspace uploads the existing ZIP format, checks the SKU against the master
+catalog, uploads real photos, and shows the immutable price, live policy names, shipping rates and offer
+thresholds before asking for a day. A changed policy requires a new review. A blank time uses 07:00 America/Detroit; a day is
+mandatory unless Publish now is explicitly pressed. Client form values cannot
+change price or listing payload. Price reviews expire after one hour.
+
+On submission: recheck inventory, check active and scheduled eBay SKUs, validate,
+recheck inventory, commit the intent and stable creation key, execute once, commit
+the returned ID, retrieve and compare observed SKU, price, quantity, title, images
+and start, then save the verified outcome before updating the catalog. PostgreSQL
+session advisory locks serialize this app's requests for a SKU across processes.
+They do not lock other marketplaces, Seller Hub, or human spreadsheet edits.
+
+A timeout or crash after intent commit remains unresolved. Recovery only reads
+status; it never silently executes another create. If no match is found, reconcile
+with Seller Hub manually. An existing eBay SKU with no saved intent blocks creation
+and requires manual linkage. No automatic deletion, cancellation, relisting or
+reset of an intent is implemented. Catalog failures leave a durable pending receipt
+and can retry only the catalog write. Catalog writes resolve rows by SKU, check live
+headers, preserve cost/formula columns and leave Date Listed blank while scheduled.
+The companion channel ledger is upserted by SKU plus eBay; a conflicting URL blocks
+updates. Receipts never include seller OAuth tokens or Google credentials.
+
+Verification is deliberately conservative. eBay-normalized image URLs or a changed
+listing price/status may require manual reconciliation. A scheduled receipt records
+an observed schedule, not proof of going live later. There is no unattended worker,
+automatic schedule monitor or Facebook publishing API in this change. The assistant
+continues to handle research, duplicate catalog intake, pricing and Facebook channel
+recommendation before preparing the upload package.
+
+### Setup acceptance checks
+
+1. Before configuring secrets, `/sell` redirects to a private login page and cannot
+   publish. Existing uploader/validation/Kitcho pages continue to work.
+2. Configure the three settings and deploy. Sign in privately and connect eBay.
+3. Use a genuinely new cataloged item, review the disclosed price, and select a day.
+   Do not reuse Kitcho or the National scale as a creation test.
+4. Confirm the saved receipt and spreadsheet SKU, ID, status, price, photos and URL.
+   Test recovery of a pending catalog result without another EXECUTE call.
+5. Confirm journal persistence across a restart. eBay login must be renewed because
+   OAuth tokens intentionally remain only in process memory.
+
+Automated tests mock eBay/Sheets and the journal. They cover the price/day gate,
+Eastern DST behavior, timeout recovery, failed-catalog recovery, wrong observed
+price, duplicate/sold catalog guards, schema-change blocks and owner/CSRF gates.
+A real database and Google service-account smoke test remain required at setup.
