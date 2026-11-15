@@ -1,0 +1,163 @@
+{
+  "inventory_id": "MW-2026-296",
+  "price_disclosed": "29.95",
+  "scheduled_eastern": "2026-11-16T07:00:00-05:00",
+  "owner_instruction": "Post that tomorrow. Owner default: 7 a.m. Eastern when time omitted. Price $29.95 plus calculated Media Mail, Best Offer disclosed before timing answer.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-296",
+    "product": {
+      "title": "Kitcho Japan’s Ultimate Dining Experience Kunio Tokuoka 2010 1st Ed Hardcover",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">Kitcho: Japan’s Ultimate Dining Experience</h2><p>Kunio Tokuoka’s illustrated exploration of Japanese kaiseki dining, seasonal food, presentation and the setting of Kyoto’s Kitcho restaurant. Text by Nobuko Sugimoto, photography by Kenji Miura, translation by Juliet Winters Carpenter, and a foreword by Thomas Keller.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Used hardcover with rubbing, small surface marks, bumped/frayed corners and wear at the spine ends. No dust jacket or slipcase included. Pages shown in the photographs appear clean; the book has not been inspected page by page. Please review the photographs for the condition of this copy.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Kodansha International, 2010; copyright page states First edition, 2010.</li><li>English-language hardcover; 192 pages.</li><li>ISBN 9784770031228 / 477003122X. Printed in Japan.</li><li>Approximately 9⅛ × 11⅝ × 1 inch; book weighs 3 lb 0.7 oz.</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One hardcover book, exactly as photographed. No dust jacket or slipcase.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Carefully protected at the covers, corners and edges and packed in a rigid box. Buyer-paid calculated Media Mail shipping. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Used hardcover with rubbing, small surface marks, bumped/frayed corners and wear at the spine ends. No dust jacket or slipcase included. Pages shown in the photographs appear clean; the book has not been inspected page by page. Please review the photographs for the condition of this copy."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Kitcho: Japan’s Ultimate Dining Experience"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Kunio Tokuoka",
+            "Nobuko Sugimoto"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "2010"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Kodansha International"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cooking"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Japanese Cooking"
+          ]
+        },
+        {
+          "name": "Number of Pages",
+          "values": [
+            "192"
+          ]
+        },
+        {
+          "name": "Edition",
+          "values": [
+            "First Edition"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9784770031228"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/b~gAAeSwTQFq-aEK/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/cSwAAeSwqolq-aEM/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/S1wAAeSw5-Nq-aEN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/cugAAeSw6mJq-aEN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TbkAAeSwjxJq-aEP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/cuoAAeSwivBq-aEQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/NSMAAeSwskdq-aER/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/THkAAeSwyiRq-aES/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TxAAAeSwAOlq-aET/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TuIAAeSwcMJq-aEU/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-296",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "29.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-16T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 14,
+            "width": 12,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "e9cf5f0bf30a4f46a4ddf6fc933c7abc"
+  },
+  "payload_sha256": "86dbf6173d15b477055eae180188fc2db13b5a56814bde710ca022a759c8a4fe"
+}
