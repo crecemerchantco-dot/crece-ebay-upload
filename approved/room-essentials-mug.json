@@ -1,0 +1,160 @@
+{
+  "inventory_id": "MW-2026-321",
+  "price_disclosed": "8.95",
+  "scheduled_eastern": "2026-11-17T07:00:00-05:00",
+  "owner_instruction": "Price approved after disclosure of8.95 plus buyer-paid calculated shipping; owner chose Tuesday. Standing default7am Eastern. Best Offer on; no auto thresholds. No new hosting charge authorized.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-321",
+    "product": {
+      "title": "Room Essentials Green Winking Smiley Face Mug Blue Raised Face Earthenware",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">Room Essentials Green Winking Smiley Face Mug</h2><p>A rounded lime-green earthenware mug with a raised blue winking smile, a green handle and a cream-colored interior.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Pre-owned with light surface wear, small interior specks/marks and wear to the unglazed foot ring. No obvious chips or cracks are visible in the supplied photographs. Please review all photographs for condition.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Brand: Room Essentials.</li><li>Earthenware; made in China.</li><li>Approximately 6 inches across including the handle, 4½ inches in body diameter and 3¼ inches tall.</li><li>Mug weighs approximately 11.6 ounces; liquid capacity has not been measured.</li><li>Base marked dishwasher safe and microwave safe, with a warning that the mug may get hot in the microwave.</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One mug, exactly as photographed.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Carefully wrapped with the handle protected and packed securely in a sturdy box. Buyer-paid calculated USPS Ground Advantage shipping. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "20695"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with light surface wear, small interior specks/marks and wear to the unglazed foot ring. No obvious chips or cracks are visible in the supplied photographs. Please review all photographs for condition."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Room Essentials"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Coffee Mug"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Green"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Earthenware"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Smiley Face"
+          ]
+        },
+        {
+          "name": "Theme",
+          "values": [
+            "Food & Drink",
+            "Novelty"
+          ]
+        },
+        {
+          "name": "Set Includes",
+          "values": [
+            "Mug"
+          ]
+        },
+        {
+          "name": "Number of Items in Set",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "China"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Dishwasher Safe",
+            "Microwave Safe"
+          ]
+        },
+        {
+          "name": "Vintage",
+          "values": [
+            "No"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/co4AAeSw9GBq-a0W/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/mFsAAeSwvxxq-a0X/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/bxQAAeSwpZxq-a0Y/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/3QQAAeSwhOZq-a0Z/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/lmUAAeSwRZVq-a0a/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/cmsAAeSwqStq-a0b/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-321",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "8.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-17T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 10,
+            "height": 9
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 12
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "fbe502d53aa4ed8a8d26f711cf94576c"
+  },
+  "payload_sha256": "8542cf97869b0f932c9fb31af0325bebdd1eb709bed26e44c8c6621615f31cdd"
+}
