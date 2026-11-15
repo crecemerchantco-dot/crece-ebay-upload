@@ -3,12 +3,13 @@ import io
 import json
 import time
 import unittest
+import zipfile
 from urllib.parse import parse_qs, urlsplit
 from unittest.mock import Mock, patch
 
 import requests
 import app as web
-from ebay_listing import LISTING_SCOPE, load_package, validate_listing
+from ebay_listing import LISTING_SCOPE, load_package, load_upload, validate_listing
 
 
 def package():
@@ -21,6 +22,30 @@ def package():
 
 
 class ListingTest(unittest.TestCase):
+    def test_zip_keeps_photo_order_without_extracting_files(self):
+        p = package()
+        p['photos'] = ['photos/02.jpg', 'photos/01.jpg']
+        stream = io.BytesIO()
+        with zipfile.ZipFile(stream, 'w') as archive:
+            archive.writestr('listing.json', json.dumps(p))
+            archive.writestr('photos/01.jpg', b'one')
+            archive.writestr('photos/02.jpg', b'two')
+        prepared, photos = load_upload(stream.getvalue())
+        self.assertEqual(photos, [('02.jpg', b'two'), ('01.jpg', b'one')])
+        self.assertEqual(prepared['options'], {'operationMode': 'VALIDATE'})
+
+    def test_zip_rejects_traversal_and_unexpected_files(self):
+        for name in ['../outside.jpg', 'photos/01.jpg']:
+            p = package()
+            p['photos'] = [name]
+            stream = io.BytesIO()
+            with zipfile.ZipFile(stream, 'w') as archive:
+                archive.writestr('listing.json', json.dumps(p))
+                archive.writestr(name, b'photo')
+                archive.writestr('unexpected.txt', b'extra')
+            with self.assertRaises(ValueError):
+                load_upload(stream.getvalue())
+
     def test_execution_mode_and_key_are_replaced_without_mutating_package(self):
         original = package()
         item = load_package(json.dumps(original).encode())
@@ -120,6 +145,27 @@ class ListingRoutesTest(unittest.TestCase):
         self.assertNotIn('<script>bad</script>', response.get_data(as_text=True))
         self.assertNotIn('SECRET', response.get_data(as_text=True))
         self.assertEqual(validator.call_args.args[1]['options']['operationMode'], 'VALIDATE')
+
+    @patch('app.configured', return_value=True)
+    @patch('app.upload_image_from_url')
+    @patch('app.validate_listing')
+    def test_failed_photo_upload_stops_before_listing_validation(self, validator, uploader, configured):
+        self.authorize()
+        p = package()
+        p['photos'] = ['photos/01.jpg']
+        stream = io.BytesIO()
+        with zipfile.ZipFile(stream, 'w') as archive:
+            archive.writestr('listing.json', json.dumps(p))
+            archive.writestr('photos/01.jpg', b'photo')
+        uploader.return_value = {'url': None}
+        response = self.client.post('/validate', data={'csrf': 'csrf', 'package': (io.BytesIO(stream.getvalue()), 'item.zip')})
+        self.assertEqual(response.status_code, 502)
+        validator.assert_not_called()
+
+    def test_download_never_exposes_another_session(self):
+        self.authorize()
+        web.TOKENS['other'] = {'prepared_listing': {'sku': 'OTHER'}}
+        self.assertEqual(self.client.get('/validate/package').status_code, 404)
 
 
 if __name__ == '__main__':
