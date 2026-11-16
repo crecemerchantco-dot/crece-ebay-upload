@@ -1,0 +1,149 @@
+{
+  "inventory_id": "MW-2026-226",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-18T07:00:00-05:00",
+  "owner_instruction": "Owner confirmed Wednesday at14.95 after shipping/offer disclosure. PACK ESTIMATE - VERIFY WHEN PACKED:13x11x4in,4lb conservative.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Wednesday, November 18, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-226",
+    "product": {
+      "title": "Wines and Spirits Alec Waugh Time Life Hardcover Recipe Book Slipcase 1968",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">Wines and Spirits — Alec Waugh</h2><p>An illustrated guide to wines, spirits and drinks from Time-Life's Foods of the World series, with its companion spiral recipe booklet and matching slipcase.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Good used vintage condition with visible wear. Slipcase has spotting, stains, discoloration, scuffs, creases and worn edges/corners. Hardcover has surface rubbing and corner wear. Spiral recipe booklet shows cover marks and edge/corner wear. Photographed interior pages appear readable; contents have not been inspected page by page. Please review all photographs.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Alec Waugh and the Editors of Time-Life Books</li><li>Foods of the World series; photographed by Arie deZanger</li><li>Hardcover copyright 1968; exact printing and recipe booklet date unconfirmed. No first-edition claim.</li><li>English-language hardcover and spiral-bound recipe booklet</li><li>Approximate set dimensions: 11 × 8¾ × 1½ inches; estimated, not individually measured</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One hardcover, one companion spiral-bound recipe booklet and the illustrated slipcase shown.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with corner and edge protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Good used vintage condition with visible wear. Slipcase has spotting, stains, discoloration, scuffs, creases and worn edges/corners. Hardcover has surface rubbing and corner wear. Spiral recipe booklet shows cover marks and edge/corner wear. Photographed interior pages appear readable; contents have not been inspected page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Wines and Spirits"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Alec Waugh"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Time-Life Books"
+          ]
+        },
+        {
+          "name": "Book Series",
+          "values": [
+            "Foods of the World"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cookbooks"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Wine"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Illustrated"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/90gAAeSwG3pq-oLU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUw/z/i-YAAeSwk9Fq-oLV/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/N74AAeSwNk9q-oLW/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUw/z/OSoAAeSwjxJq-oLX/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUw/z/9kwAAeSwdiBq-oLY/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Oc8AAeSwcMJq-oLZ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/sc0AAeSwRCdq-oLa/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-226",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-18T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 13,
+            "width": 11,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "fb26c226a0c04ce086eaff6d20261118"
+  },
+  "payload_sha256": "bcc5289352bdae1e844eff99b5e628f128238232ff9f2b7cfb3c9f89a245e9fa"
+}
