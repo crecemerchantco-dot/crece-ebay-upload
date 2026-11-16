@@ -20,6 +20,7 @@ APPROVED = {
     'mug-321': ('room-essentials-mug.json', 'MW-2026-321', '8.95', '2026-11-17T12:00:00Z'),
     'babbitt-292': ('babbitt.json', 'MW-2026-292', '19.95', '2026-11-18T12:00:00Z'),
     'chile-291': ('green-chile-bible.json', 'MW-2026-291', '4.95', '2026-11-19T12:00:00Z'),
+    'mothers-322': ('mothers-encyclopedia.json', 'MW-2026-322', '19.95', '2026-11-22T12:00:00Z'),
     'wine-290': ('world-atlas-wine.json', 'MW-2026-290', '7.95', '2026-11-21T12:00:00Z'),
     'mcgee-293': ('on-food-and-cooking.json', 'MW-2026-293', '12.95', '2026-11-20T12:00:00Z'),
 }
