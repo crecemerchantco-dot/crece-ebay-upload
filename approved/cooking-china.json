@@ -1,0 +1,154 @@
+{
+  "inventory_id": "MW-2026-227",
+  "price_disclosed": "19.95",
+  "scheduled_eastern": "2026-11-17T07:00:00-05:00",
+  "owner_instruction": "Owner chose Tuesday after $19.95 plus calculated Media Mail disclosure;Best Offer,no automatic thresholds. PACK ESTIMATE - VERIFY WHEN PACKED:13x11x4in,4lb conservative;not measured.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Tuesday, November 17, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-227",
+    "product": {
+      "title": "The Cooking of China Emily Hahn 1971 Time Life Hardcover Recipe Book Slipcase",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">The Cooking of China — Emily Hahn</h2><p>Emily Hahn's illustrated exploration of Chinese food and cooking, from Time-Life's Foods of the World series, accompanied by the spiral-bound recipe booklet and matching slipcase.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Good used vintage condition with visible wear. Slipcase shows spotting, discoloration, scuffs, edge rubbing and worn corners. The recipe booklet has cover marks and corner creasing/wear. The photographed interior pages appear readable; neither volume has been inspected page by page. Please review all photographs.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Emily Hahn and the Editors of Time-Life Books</li><li>Foods of the World series; photographed by Michael Rougier</li><li>Hardcover copyright 1968; revised 1971 as printed in the book. Recipe booklet printing not confirmed.</li><li>English language; hardcover and spiral-bound recipe booklet</li><li>Approximate set dimensions: 11 × 8½ × 1¼ inches; estimated, not individually measured</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One hardcover, one companion spiral-bound recipe booklet and the matching illustrated slipcase shown.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with corner and edge protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Good used vintage condition with visible wear. Slipcase shows spotting, discoloration, scuffs, edge rubbing and worn corners. The recipe booklet has cover marks and corner creasing/wear. The photographed interior pages appear readable; neither volume has been inspected page by page. Please review all photographs."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Cooking of China"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Emily Hahn"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Time-Life Books"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1971"
+          ]
+        },
+        {
+          "name": "Book Series",
+          "values": [
+            "Foods of the World"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cookbooks"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Chinese Cooking"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Illustrated"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ZaoAAeSwlW9q-oDl/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/bp4AAeSwk9Fq-oDm/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ZyQAAeSwTQFq-oDn/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/P-QAAeSwF5dq-oDo/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/5i8AAeSwOUZq-oDq/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/3NgAAeSwmb9q-oDr/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-227",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "19.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-17T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 13,
+            "width": 11,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "china227-20261117-1200-approved"
+  },
+  "payload_sha256": "0c7c3bdad539fd4999a4cb931abcc55bb2d915d8eab8edaa92bdf4b838f2d5b1"
+}
