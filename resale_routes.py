@@ -91,7 +91,7 @@ def register(app, page, access_token, tokens, configured, upload_photo):
                 return redirect(url_for('resale_home'))
             error = 'Password not recognized.'
         return page('Your resale workspace', '''
-{% if not ready %}<p>The repeatable listing flow is built but setup is incomplete. Publishing here is disabled until private access, saved receipts and the catalog connection are ready.</p>
+{% if not ready %}<p>The optional automatic catalog workspace is not configured. Your approved-item publishing flow is still available.</p><p><a href="{{ url_for('approved_home') }}">Open approved listings</a></p>
 {% else %}<form method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><label>Workspace password <input type="password" name="password" autocomplete="current-password" required></label><p><button>Open my workspace</button></p></form>{% endif %}
 {% if error %}<p>{{ error }}</p>{% endif %}''', ready=bool(password_hash), error=error, csrf=csrf())
 

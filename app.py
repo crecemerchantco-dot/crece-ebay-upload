@@ -87,9 +87,10 @@ def index():
 <form action="{{ url_for('disconnect') }}" method="post"><button type="submit">Disconnect eBay</button></form>
 {% endif %}<p><a href="{{ url_for('checks') }}">Check listing connection</a></p>
 <p><a href="{{ url_for('listing_validation') }}">Check a prepared listing with eBay</a></p>
-<p><a href="{{ url_for('resale_home') }}">Open my resale workspace</a></p>
+<p><a href="{{ url_for('approved_home') }}">Open approved listings</a></p>
+{% if workspace_ready %}<p><a href="{{ url_for('resale_home') }}">Open my resale workspace</a></p>{% endif %}
 <p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
-''', ready=configured(), connected=bool(access_token()) if configured() else False)
+''', ready=configured(), connected=bool(access_token()) if configured() else False, workspace_ready=setup_ready())
 
 
 @app.get('/health')
