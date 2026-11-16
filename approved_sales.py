@@ -20,6 +20,7 @@ APPROVED = {
     'mug-321': ('room-essentials-mug.json', 'MW-2026-321', '8.95', '2026-11-17T12:00:00Z'),
     'babbitt-292': ('babbitt.json', 'MW-2026-292', '19.95', '2026-11-18T12:00:00Z'),
     'chile-291': ('green-chile-bible.json', 'MW-2026-291', '4.95', '2026-11-19T12:00:00Z'),
+    'mcgee-293': ('on-food-and-cooking.json', 'MW-2026-293', '12.95', '2026-11-20T12:00:00Z'),
 }
 LOCK = threading.Lock()
 
@@ -76,6 +77,14 @@ def submit(code, token, http=None, now=None):
 
 
 def register(app, page, access_token, tokens, configured):
+    @app.get('/publish/approved')
+    def approved_home():
+        records = [(code, load_approval(code)) for code in APPROVED]
+        return page('Approved listings', '''
+<p>Open an item to check its approved price, publication day and eBay result. Only individually approved items are available here.</p>
+<ul>{% for code, record in records %}<li><a href="{{ url_for('publish_approved', code=code) }}">{{ record.inventory_id }} — {{ record.listing.product.title }}</a><br>${{ record.price_disclosed }} · {{ record.publication_label }}</li>{% endfor %}</ul>
+<p>Scheduling checks eBay for an existing listing before creating one. Download the receipt after submission; catalog updates are completed separately.</p>''', records=records)
+
     @app.route('/publish/approved/<code>', methods=['GET', 'POST'])
     def publish_approved(code):
         try:
