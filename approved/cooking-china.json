@@ -148,7 +148,7 @@
     "options": {
       "operationMode": "EXECUTE"
     },
-    "idempotencyKey": "china227-20261117-1200-approved"
+    "idempotencyKey": "b30f6e43966580d178fdcb26b0ae9d73"
   },
-  "payload_sha256": "0c7c3bdad539fd4999a4cb931abcc55bb2d915d8eab8edaa92bdf4b838f2d5b1"
+  "payload_sha256": "7dd2101030dd9e58cd54f51d60033046464d9d07c90c81f62284bc88b76d6b10"
 }
