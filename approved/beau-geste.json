@@ -1,0 +1,149 @@
+{
+  "inventory_id": "MW-2026-331",
+  "price_disclosed": "9.95",
+  "scheduled_eastern": "2026-11-17T07:00:00-05:00",
+  "owner_instruction": "Owner selected Tuesday after disclosure of $9.95 plus calculated Media Mail; Best Offer without automatic acceptance or decline. Book 15.6oz,7.5x5x1.25in. PACK ESTIMATE VERIFY WHEN PACKED1lb11oz/10x7x3in exterior.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Tuesday, November 17, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-331",
+    "product": {
+      "title": "Beau Geste PC Wren Grosset Dunlap Photoplay Ronald Colman Hardcover No DJ",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">Beau Geste — P. C. Wren</h2><p>A vintage Grosset &amp; Dunlap photoplay edition of Wren’s Foreign Legion adventure, illustrated with scenes from the Paramount film directed by Herbert Brenon and starring Ronald Colman. Bound in blue cloth with black lettering.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Acceptable vintage hardcover. No dust jacket. Pronounced staining, spotting and discoloration affect both boards and the spine. Cloth shows rubbing, fading, worn and bumped corners and spine ends, and small abrasions. Pages are age toned, with spotting on preliminary pages and hinge wear. The photographed film-still frontispiece is present. Not inspected page by page; completeness of all photographic plates and the text, and binding strength, have not been fully checked. Please review all seven photographs.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Title: Beau Geste</li><li>Author: Percival Christopher Wren (P. C. Wren)</li><li>Publisher: Grosset &amp; Dunlap, New York</li><li>Photoplay edition associated with the 1926 Ronald Colman film</li><li>Copyright 1926; exact printing date undated</li><li>English-language blue cloth hardcover</li><li>Approximately 7½ × 5 × 1¼ inches; book-only weight 15.6 oz</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One hardcover book. No dust jacket.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable vintage hardcover; no jacket. Pronounced cloth staining/spotting/discoloration across both boards and spine, rubbing/fading, worn/bumped corners/spine ends and small abrasions. Toned pages, preliminary-page spotting and hinge wear. Text/photographic-plate completeness and binding strength unverified."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Beau Geste"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Percival Christopher Wren"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Grosset & Dunlap"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Adventure"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "French Foreign Legion"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Illustrated"
+          ]
+        },
+        {
+          "name": "Edition",
+          "values": [
+            "Photoplay Edition"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/OKQAAeSw2qZq-95U/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/3XgAAeSwqolq-95V/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/OeEAAeSwZsdq-95W/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/UxoAAeSwskdq-95Y/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/6WgAAeSw9R5q-95Z/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/6bAAAeSw9Rpq-95a/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/3lYAAeSwRZVq-95b/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-331",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "9.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-17T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 11
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "f90a2d903b6cb818654db16f34aa39e8"
+  },
+  "payload_sha256": "fca42f411c16b35da9ac8605583fb4646c5a9dce321a5ad12377b52705b6ee90"
+}
