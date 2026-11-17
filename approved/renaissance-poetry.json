@@ -1,0 +1,150 @@
+{
+  "inventory_id": "MW-2026-327",
+  "price_disclosed": "5.95",
+  "scheduled_eastern": "2026-11-19T07:00:00-05:00",
+  "owner_instruction": "Owner chose coming Thursday after disclosure5.95pluscalculatedMediaMail,BestOffer/noautomaticthresholds. Bare42.9oz/9x6.25x2in. PACK ESTIMATE VERIFY WHEN PACKED3lb10oz/11x9x4in.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Thursday, November 19, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-327",
+    "product": {
+      "title": "Poetry of the English Renaissance 1509-1660 Hebel Hudson 1932 Crofts Hardcover",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Poetry of the English Renaissance, 1509\u20131660</h2><p>A substantial vintage poetry anthology selected from early editions and manuscripts, edited by J. William Hebel and Hoyt H. Hudson. This F. S. Crofts hardcover is the September 1932 third printing.</p><h3>Condition</h3><p>Acceptable vintage condition. No dust jacket. Heavy scratches, scuffs, pale spots and staining on the cloth boards; faded spine lettering and worn gilt emblem. Corners and spine ends are worn and frayed, with small holes in the cloth near a joint. Pages and endpapers show foxing and age toning. A former owner\u2019s handwritten name and date and handwritten study notes appear on the endpapers. Preliminary pages have corner creasing, and the hinges show wear. Not inspected page by page; binding strength and interior completeness have not been fully checked. Please review all eight photographs.</p><h3>Details</h3><ul><li>Title: Poetry of the English Renaissance, 1509\u20131660</li><li>Editors: J. William Hebel, Cornell University, and Hoyt H. Hudson, Princeton University</li><li>Publisher: F. S. Crofts &amp; Co., New York</li><li>Third printing, September 1932; title page dated 1932; copyright 1929</li><li>English-language cloth hardcover with gilt front emblem; printed in the United States</li><li>Approximately 9 \u00d7 6\u00bc \u00d7 2 inches; book-only weight 2 lb 10.9 oz</li></ul><h3>Included</h3><p>One hardcover book. No dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable vintage hardcover. No jacket. Heavy cloth scratches/scuffs/spots/staining, faded gilt, worn/frayed spine ends/corners, small joint holes, foxing/toning, handwritten name/date and study notes on endpapers. Creased preliminary-page corners; hinge wear. Not inspected page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Poetry of the English Renaissance, 1509-1660"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "J. William Hebel; Hoyt H. Hudson"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "F. S. Crofts & Co."
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1932"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Poetry"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Renaissance"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Lb4AAeSw5mNq-85i/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pMIAAeSwvxxq-85j/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/BnoAAeSwYRRq-85k/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/BW0AAeSw2qZq-85l/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/psgAAeSwaVVq-85m/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pDQAAeSwykpq-85o/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Mb0AAeSwmm1q-85p/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wxkAAeSwutFq-85q/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-327",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "5.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-19T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 9,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 10
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "ddc80418fd4d9036a9500ccc84fcd9ac"
+  },
+  "payload_sha256": "21d7d4530283f7df6eb0943161439c82fd8ecb999585f28405e842311b55f752"
+}
