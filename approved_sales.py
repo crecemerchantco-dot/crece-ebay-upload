@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'fowles-325': ('french-lieutenants-woman.json', 'MW-2026-325', '7.95', '2026-11-17T12:00:00Z'),
     'lincoln-324': ('lincolns-sons.json', 'MW-2026-324', '9.95', '2026-11-22T12:00:00Z'),
     'spirits-226': ('wines-spirits.json', 'MW-2026-226', '14.95', '2026-11-18T12:00:00Z'),
     'china-227': ('cooking-china.json', 'MW-2026-227', '19.95', '2026-11-17T12:00:00Z'),
