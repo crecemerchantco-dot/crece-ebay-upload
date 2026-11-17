@@ -1,0 +1,146 @@
+{
+  "inventory_id": "MW-2026-325",
+  "price_disclosed": "7.95",
+  "scheduled_eastern": "2026-11-17T07:00:00-05:00",
+  "owner_instruction": "Owner chose tomorrow after disclosure7.95+calculatedMediaMail,BestOffer,noautomaticthresholds. Bare36oz/9.25x6x1.25in. PACK ESTIMATE VERIFY WHEN PACKED3lb2oz/12x9x3in.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Tuesday, November 17, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-325",
+    "product": {
+      "title": "The French Lieutenant's Woman John Fowles Little Brown Seventh Printing HC No DJ",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>The French Lieutenant\u2019s Woman \u2014 John Fowles</h2><p>A vintage cloth hardcover of John Fowles\u2019s novel, published by Little, Brown and Company. The copyright page identifies this copy as the seventh printing.</p><h3>Condition</h3><p>Acceptable vintage condition. No dust jacket. Pronounced fading and discoloration to the spine and board edges, with rubbing, scuffs, small spots and wear at the corners and spine ends. Photographed pages show age toning. Not inspected page by page; interior completeness and binding strength have not been fully checked. Please review all ten photographs.</p><h3>Details</h3><ul><li>Author: John Fowles</li><li>Publisher: Little, Brown and Company, Boston and Toronto</li><li>Copyright 1969; stated Seventh Printing. Actual printing year unconfirmed.</li><li>English-language cloth hardcover; printed in the United States</li><li>Approximately 9\u00bc \u00d7 6 \u00d7 1\u00bc inches; book-only weight 2 lb 4 oz</li></ul><h3>Included</h3><p>One hardcover book. No dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable vintage hardcover. No dust jacket. Pronounced spine/board-edge fading and discoloration, rubbed/scuffed cloth, small spots, corner/spine-end wear. Toning to pages shown. Not inspected page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The French Lieutenant's Woman"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "John Fowles"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Little, Brown and Company"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Literary"
+          ]
+        },
+        {
+          "name": "Narrative Type",
+          "values": [
+            "Fiction"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/4goAAeSwT1Rq-8bb/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/es0AAeSwxjZq-8bc/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/4y8AAeSwEaNq-8be/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/5FsAAeSwZCNq-8bf/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/-dkAAeSwKftq-8bg/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/odcAAeSwNk9q-8bh/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pCgAAeSwbshq-8bi/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/dpAAAeSwc0Vq-8bj/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fHAAAeSwykpq-8bk/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VCAAAeSwZWdq-8bl/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-325",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "7.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-17T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 9,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 2
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "8a78bd9c580db0f05322435a5ea0e965"
+  },
+  "payload_sha256": "bfaf78d0c54297dfe788feb8690a0901df202450d0c100bf4a3f401a670abc96"
+}
