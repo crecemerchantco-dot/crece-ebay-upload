@@ -1,0 +1,145 @@
+{
+  "inventory_id": "MW-2026-334",
+  "price_disclosed": "9.95",
+  "scheduled_eastern": "2026-11-18T07:00:00-05:00",
+  "owner_instruction": "Owner approved9.95 plus calculatedMediaMail,BestOffer no automatic thresholds, tomorrowNov18 at7AM EST. Original Book_Inventory_Handoff confirms bare22.3oz,7.75x5.25x1.375in. Packed estimate2lb2oz,10x7x3in.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "publication_label": "Wednesday, November 18, 2026 at 7 a.m. Eastern",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-334",
+    "product": {
+      "title": "The Wrecker 1913 Robert Louis Stevenson Lloyd Osbourne Scribners Illustrated HC",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;line-height:1.3;margin:0 0 12px;\">The Wrecker — Robert Louis Stevenson &amp; Lloyd Osbourne</h2><p>A 1913 illustrated Charles Scribner’s Sons printing of this adventure novel, bound in green ribbed cloth with a gilt front monogram and gilt spine lettering.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Used antique hardcover; no dust jacket. Cloth shows rubbing, scuffs and small spots/marks, with wear and bumping at corners and spine ends. Pages and edges are age toned, with scattered spotting/foxing, including at the frontispiece margins. The frontispiece tissue guard is present and has toning and creasing. Uneven page edges and minor preliminary-page creasing/edge wear are visible. Not inspected page by page; completeness of all text and illustrations and binding strength have not been fully verified. Please review all eight photographs.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><ul><li>Title: The Wrecker</li><li>Authors: Robert Louis Stevenson and Lloyd Osbourne</li><li>Publisher: Charles Scribner’s Sons, New York</li><li>Title-page date: 1913; copyright: 1891</li><li>Later illustrated printing</li><li>English-language green cloth hardcover</li><li>Approximately 7¾ × 5¼ × 1⅜ inches; book-only weight 1 lb 6.3 oz</li></ul><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One hardcover book. No dust jacket.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>Protected against moisture and packed in a rigid box with board and corner protection. Buyer-paid calculated USPS Media Mail shipping. Two-business-day handling. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Used antique hardcover; no jacket. Cloth rubbing/scuffs/small marks, worn/bumped corners/spine ends. Toned pages/edges, scattered spotting/foxing, creased/toned tissue guard and minor preliminary-page edge wear. Text/illustration completeness and binding strength unverified."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Wrecker"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Robert Louis Stevenson",
+            "Lloyd Osbourne"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Charles Scribner's Sons"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1913"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Adventure"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Illustrated"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/-3UAAeSwNk9q~KSS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/IVUAAeSwsilq~KST/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/~LkAAeSwyiRq~KSU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/JzUAAeSw2qZq~KSV/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/KCAAAeSwXRNq~KSW/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Hv8AAeSwqolq~KSX/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/It8AAeSwivBq~KSY/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/~esAAeSwcMJq~KSZ/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-334",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "9.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-18T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 2
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "93e00c07dfca841d88991a1d1143b8ab"
+  },
+  "payload_sha256": "758a7f190eab498b9072a9e6e00b9c45cba1b6fb98724254e7b7ea1e314f5969"
+}
