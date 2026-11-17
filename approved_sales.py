@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'kidnapped-330': ('kidnapped.json', 'MW-2026-330', '9.95', '2026-11-22T12:00:00Z'),
     'trinity-329': ('day-of-trinity.json', 'MW-2026-329', '9.95', '2026-11-21T12:00:00Z'),
     'webster-328': ('websters-dictionary.json', 'MW-2026-328', '7.95', '2026-11-20T12:00:00Z'),
     'poetry-327': ('renaissance-poetry.json', 'MW-2026-327', '5.95', '2026-11-19T12:00:00Z'),
