@@ -1,0 +1,149 @@
+{
+  "inventory_id": "MW-2026-336",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-20T07:00:00-05:00",
+  "publication_label": "Friday, November 20, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner said: Let's list on Friday of this week at that price. Disclosed $14.95 Buy It Now with Best Offer and no automatic thresholds, plus calculated Media Mail.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-336",
+    "product": {
+      "title": "Sverige Sweden Schweden Bo Setterlind 1973 Grako Hardcover Photo Book DJ",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Sverige / Sweden / Schweden</h2><p>An oversized 1973 photographic portrait of Sweden, with text by Bo Setterlind and photography by Giovanni Trimboli and G\u00f6ran Alg\u00e5rd. Color photographs and trilingual text capture Swedish landscapes and everyday life.</p><h3>Condition</h3><p>Acceptable. Dust jacket has pronounced edge wear, creases, tears and missing pieces at the edges and corners. Light spotting and age toning on photographed interior pages. A loose thread is visible at one gutter. Completeness has not been checked page by page. Please see the photographs for the jacket and interior condition.</p><h3>Details</h3><ul><li>Grako AB, Stockholm, 1973</li><li>Hardcover with illustrated dust jacket</li><li>Swedish, English and German text</li><li>ISBN 91-970058-0-0</li><li>Approximately 14\u00bd \u00d7 7\u00bd \u00d7 \u00be inches. Book weighs 2 lb 1 oz.</li></ul><h3>Included</h3><p>One hardcover book with its illustrated dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Packed flat in a rigid box with moisture and corner protection. Buyer-paid calculated USPS Media Mail. Two-business-day handling. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Dust jacket has pronounced edge wear, creases, tears and missing pieces at the edges and corners. Light spotting and age toning on photographed interior pages. A loose thread is visible at one gutter. Completeness has not been checked page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Sverige / Sweden / Schweden"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Bo Setterlind"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "Swedish",
+            "English",
+            "German"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Grako AB"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1973"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Sweden",
+            "Photography"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Sweden"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/W98AAeSwyMxq~iCN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/KycAAeSwqgRq~iCO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/9gkAAeSwiPVq~iCP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vD4AAeSwb4dq~iCQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/8-0AAeSw~hZq~iCR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/W0sAAeSwzuVq~iCS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/9ZUAAeSwypdq~iCT/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/W1UAAeSwzuVq~iCU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/9x4AAeSwFO9q~iCV/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/iPAAAeSw0CNq~iCW/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-336",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-20T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 17,
+            "width": 10,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "8b1c92586d96c17eefeab4931da83ce5"
+  },
+  "payload_sha256": "95fb3097b0a55c4e27b288b30774801bca0ee6a215fbc5df23dd79541463bbdd"
+}
