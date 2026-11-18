@@ -1,0 +1,152 @@
+{
+  "inventory_id": "MW-2026-338",
+  "price_disclosed": "8.95",
+  "scheduled_eastern": "2026-11-22T07:00:00-05:00",
+  "publication_label": "Sunday, November 22, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved $8.95 and instructed listing on Sunday after disclosure of Best Offer, no automatic thresholds and calculated USPS Media Mail.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-338",
+    "product": {
+      "title": "The Short Stories of Ernest Hemingway 1961 Scribner Yellow Cloth Hardcover",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>The Short Stories of Ernest Hemingway</h2><p>This yellow cloth Scribner hardcover includes Hemingway\u2019s preface and stories such as \u201cThe Snows of Kilimanjaro,\u201d \u201cHills Like White Elephants,\u201d and both parts of \u201cBig Two-Hearted River.\u201d</p><h3>Condition</h3><p>Yellow cloth shows scattered marks, rubbing and discoloration. Corners and spine ends show wear. Pages are lightly toned, with small marks visible near the edges of some photographed pages. No dust jacket. Completeness has not been checked page by page. See the photographs for cover and interior condition.</p><h3>Details</h3><ul><li>Charles Scribner\u2019s Sons, New York</li><li>1961 printing, code F-10.61 [MH], consistent with a book club issue</li><li>English-language cloth hardcover, printed in the United States</li><li>8\u00bd \u00d7 5\u00be \u00d7 1\u00be inches. Book weighs 1 lb 8 oz.</li></ul><h3>Included</h3><p>One hardcover book.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner and moisture protection. Buyer-paid calculated USPS Media Mail. Two-business-day handling. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Yellow cloth shows scattered marks, rubbing and discoloration. Corners and spine ends show wear. Pages are lightly toned, with small marks visible near the edges of some photographed pages. No dust jacket. Completeness has not been checked page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Short Stories of Ernest Hemingway"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Ernest Hemingway"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Charles Scribner's Sons"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1961"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Literary Fiction"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Short Stories"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/J9sAAeSwV45q~iSb/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/NwkAAeSwfcdq~iSc/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Nw4AAeSwfcdq~iSc/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/OB0AAeSw7UZq~iSe/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/BSUAAeSw9e5q~iSe/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/yHAAAeSwb4dq~iSf/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/xlYAAeSwmgFq~iSh/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/NvMAAeSweBdq~iSi/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/x6EAAeSwGPJq~iSi/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/BTcAAeSw9e5q~iSj/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-338",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "8.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-22T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 3
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "e9c44194adc7ee89038071cda37fbcbb"
+  },
+  "payload_sha256": "9148a8976b0e60e8ed9772c55f98af4591e07012a33d02fc8d816c7b63371031"
+}
