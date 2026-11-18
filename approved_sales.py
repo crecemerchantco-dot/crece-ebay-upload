@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'mms-335': ('mms-record-lot.json', 'MW-2026-335', '49.95', '2026-11-19T12:00:00Z'),
     'wrecker-334': ('the-wrecker.json', 'MW-2026-334', '9.95', '2026-11-18T12:00:00Z'),
     'fifty-333': ('fifty-famous-stories.json', 'MW-2026-333', '5.95', '2026-11-19T12:00:00Z'),
     'balfour-332': ('david-balfour.json', 'MW-2026-332', '9.95', '2026-11-18T12:00:00Z'),
