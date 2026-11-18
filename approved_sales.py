@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'hemingway-338': ('hemingway-338.json', 'MW-2026-338', '8.95', '2026-11-22T12:00:00Z'),
     'nightingale-337': ('nightingale-337.json', 'MW-2026-337', '9.95', '2026-11-21T12:00:00Z'),
     'sverige-336': ('sverige-336.json', 'MW-2026-336', '14.95', '2026-11-20T12:00:00Z'),
     'mms-335': ('mms-record-lot.json', 'MW-2026-335', '49.95', '2026-11-19T12:00:00Z'),
