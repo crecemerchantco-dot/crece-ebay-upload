@@ -1,0 +1,157 @@
+{
+  "inventory_id": "MW-2026-337",
+  "price_disclosed": "9.95",
+  "scheduled_eastern": "2026-11-21T07:00:00-05:00",
+  "publication_label": "Saturday, November 21, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner said: List this for Saturday at that price. Disclosed $9.95 Buy It Now with Best Offer and no automatic thresholds plus calculated USPS Media Mail.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-337",
+    "product": {
+      "title": "The Story of Florence Nightingale Margaret Leighton 1952 Signature Books HC",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>The Story of Florence Nightingale</h2><p>Margaret Leighton\u2019s illustrated biography for young readers follows Florence Nightingale\u2019s life and nursing work. Corinne Boyd Dillon\u2019s drawings include a timeline on the endpapers.</p><h3>Condition</h3><p>Acceptable. Cloth boards show rubbing and stains, especially on the back. Corners and spine ends are worn and frayed. Pages show age toning and there is a previous owner's name in ink inside the front. No dust jacket. Completeness has not been checked page by page. See photographs of the boards, spine and interior.</p><h3>Details</h3><ul><li>Signature Books series, Grosset &amp; Dunlap, New York</li><li>Copyright 1952. Exact printing undetermined.</li><li>English-language cloth hardcover, printed in the United States</li><li>Library of Congress catalog card number 52-11074</li><li>8\u00bd \u00d7 5\u00bd \u00d7 1 in. Book weighs 15 oz.</li></ul><h3>Included</h3><p>One illustrated cloth hardcover.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner and moisture protection. Buyer-paid calculated USPS Media Mail. Two-business-day handling. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Cloth boards show rubbing and stains, especially on the back. Corners and spine ends are worn and frayed. Pages show age toning and there is a previous owner's name in ink inside the front. No dust jacket. Completeness has not been checked page by page."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Story of Florence Nightingale"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Margaret Leighton"
+          ]
+        },
+        {
+          "name": "Illustrator",
+          "values": [
+            "Corinne Boyd Dillon"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Grosset & Dunlap"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1952"
+          ]
+        },
+        {
+          "name": "Book Series",
+          "values": [
+            "Signature Books"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Florence Nightingale"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/J-MAAeSwqZVq~iLm/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/qj4AAeSwoXJq~iLn/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/j-MAAeSw7Ypq~iLo/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/~z4AAeSw5J9q~iLp/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/AAsAAeSwiPVq~iLq/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Mq4AAeSw-Ctq~iLr/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/~tMAAeSwMj9q~iLs/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wp8AAeSwsE9q~iLt/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/Mw0AAeSweSFq~iLu/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-337",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "9.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-21T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 10
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "44c147af62960cc322a77bc5d7c0bb78"
+  },
+  "payload_sha256": "27734832ed30803feabbf854ff7494ab4ecb0bc086d14a9458ed932ffb1a1bdb"
+}
