@@ -1,0 +1,152 @@
+{
+  "inventory_id": "MW-2026-339",
+  "price_disclosed": "39.95",
+  "scheduled_eastern": "2026-11-23T07:00:00-05:00",
+  "publication_label": "Monday, November 23, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner said: Let's list this on next Monday and the price is correct. Disclosed $39.95 with Best Offer, no automatic thresholds and calculated USPS Media Mail.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-339",
+    "product": {
+      "title": "Pride and Prejudice Jane Austen 1976 Dutton Isabel Bishop Illustrated Slipcase",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Pride and Prejudice</h2><p>Jane Austen\u2019s novel in the 1976 E. P. Dutton edition, with black-and-white illustrations and an afterword by Isabel Bishop. The golden cloth boards feature an Austen silhouette and facsimile signature, and the pictorial slipcase has a black pull ribbon.</p><h3>Condition</h3><p>The cloth hardcover shows light surface marks, wear at the spine ends and some fading to the spine. The illustrated slipcase shows rubbing, small scuffs and wear at the edges and corners, with a small mark on the pictorial label. The black pull ribbon is present. Photographed pages look clean. Pages and plates have not been checked individually. See the photographs for the condition of the book and slipcase.</p><h3>Details</h3><ul><li>E. P. Dutton and Company, New York, 1976</li><li>Includes an Austen chronology and a biographical note on Isabel Bishop</li><li>English-language cloth hardcover, printed in the United States</li><li>ISBN 0-525-18381-7</li><li>Approximately 10 \u00d7 7\u00bc \u00d7 1\u00be inches. Item weighs 2 lb 12 oz.</li></ul><h3>Included</h3><p>One hardcover book and its illustrated slipcase.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner and moisture protection. Buyer-paid calculated USPS Media Mail. Two-business-day handling. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Good. The cloth hardcover shows light surface marks, wear at the spine ends and some fading to the spine. The illustrated slipcase shows rubbing, small scuffs and wear at the edges and corners, with a small mark on the pictorial label. The black pull ribbon is present. Photographed pages look clean. Pages and plates have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Pride and Prejudice"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Jane Austen"
+          ]
+        },
+        {
+          "name": "Illustrator",
+          "values": [
+            "Isabel Bishop"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "E. P. Dutton and Company"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1976"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Classics"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/PnQAAeSwV45q~iZW/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/HuoAAeSwFO9q~iZX/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/18wAAeSwsE9q~iZY/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/SSgAAeSwkvpq~iZZ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/R~kAAeSw-Ctq~iZa/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/HB8AAeSw9e5q~iZb/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Rb0AAeSw-u5q~iZc/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/SBgAAeSw-Ctq~iZd/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/HWMAAeSw0hRq~iZe/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/nm0AAeSwE6pq~iZf/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-339",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "39.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-23T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 10
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "316e7076607bb51c572906895ee68006"
+  },
+  "payload_sha256": "366671105dfec4287449923f68e1de8db6808c46a1e57f2c6ab0d5991d518669"
+}
