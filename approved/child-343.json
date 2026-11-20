@@ -1,0 +1,145 @@
+{
+  "inventory_id": "MW-2026-343",
+  "price_disclosed": "2.95",
+  "scheduled_eastern": "2026-11-29T07:00:00-05:00",
+  "publication_label": "Sunday, November 29, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed listing after disclosure of $2.95, shipping and the Sunday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-343",
+    "product": {
+      "title": "A Child Is Born Lennart Nilsson 1978 Revised Edition Hardcover Worn Dust Jacket",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>A Child Is Born</h2><p>This revised edition features Lennart Nilsson\u2019s photographs of prenatal development and includes color and black-and-white images.</p><h3>Condition</h3><p>Acceptable. Dust jacket has substantial tearing and loss at the top of the front and spine, plus edge wear, staining and discoloration. Some page toning is visible. Pages have not been checked individually.</p><h3>Details</h3><ul><li>Delacorte Press / Seymour Lawrence hardcover. Second printing of the revised edition, dated 1978.</li><li>English. ISBN 0-440-01266-X.</li><li>Approx. 9\u00bd \u00d7 7 \u00d7 \u00be in. and 1 lb 2 oz before packing.</li></ul><h3>Included</h3><p>One hardcover book with worn dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid mailer with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Dust jacket has substantial tearing and loss at the top of the front and spine, plus edge wear, staining and discoloration. Some page toning is visible. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "A Child Is Born"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Lennart Nilsson"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Delacorte Press / Seymour Lawrence"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1978"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9780440012665"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Prenatal Development"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/j-AAAeSwt8lq~69k/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fFUAAeSwqgRq~69m/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fxgAAeSwfUJq~69n/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/tLQAAeSw~yxq~69o/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/8xsAAeSwuHdq~69p/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/FPkAAeSwV45q~69r/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/gAkAAeSwkvpq~69s/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pg0AAeSws-Rq~69t/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/nUAAAeSwlvxq~69t/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-343",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "2.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-29T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 9,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 14
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "6c663bc9a952706e029b560de5555344"
+  },
+  "payload_sha256": "16b94253b83911c14a20ff49e49abc7a44d70ecd39c5bf04fb749000a8899686"
+}
