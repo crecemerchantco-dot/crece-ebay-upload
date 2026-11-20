@@ -1,0 +1,150 @@
+{
+  "inventory_id": "MW-2026-340",
+  "price_disclosed": "7.95",
+  "scheduled_eastern": "2026-11-24T07:00:00-05:00",
+  "publication_label": "Tuesday, November 24, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner accepted the disclosed price and asked for next Tuesday after disclosure of 7 a.m. Eastern default.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-340",
+    "product": {
+      "title": "The Unvanquished Howard Fast 1942 Book League Hardcover Map Endpapers",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px\">\n<h2 style=\"font-size:22px;margin:0 0 12px\">The Unvanquished by Howard Fast</h2>\n<p>Howard Fast\u2019s novel follows George Washington and the Continental Army through the 1776 campaign. This 1942 Book League of America hardcover has blue map endpapers charting the retreat through New York and New Jersey.</p>\n<h3 style=\"font-size:18px;margin:20px 0 8px\">Condition</h3>\n<p>Acceptable vintage condition. The tan cloth has scattered spotting and discoloration, rubbed corners, and wear at the spine ends. The photographed pages show age toning. Prior-owner handwriting is visible on the title page and map endpapers. Wear is visible at the inner hinge. No dust jacket. Pages have not been checked individually.</p>\n<h3 style=\"font-size:18px;margin:20px 0 8px\">Details</h3>\n<ul><li>The Book League of America, New York, 1942</li><li>English-language historical fiction in tan cloth</li><li>Approx. 8 \u00d7 5\u00be \u00d7 1\u00bd in. and 1 lb 5 oz before packing</li></ul>\n<h3 style=\"font-size:18px;margin:20px 0 8px\">Included</h3>\n<p>One hardcover book.</p>\n<h3 style=\"font-size:18px;margin:20px 0 8px\">Packing &amp; Shipping</h3>\n<p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p>\n</div>\n",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Cloth spotting and discoloration, rubbed corners and spine wear. Age-toned pages, prior-owner writing on title page and map endpapers, and visible inner hinge wear. No dust jacket. Pages not checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Unvanquished"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Howard Fast"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "The Book League of America"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1942"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Historical Fiction"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "American Revolutionary War"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i5sAAeSwbVxq~6ax/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/f50AAeSwxpJq~6ay/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vSEAAeSwFO9q~6az/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fcQAAeSwiXpq~6a0/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/fPIAAeSwYKhq~6a1/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/S-gAAeSwhitq~6a2/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TeEAAeSwkvpq~6a4/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fPsAAeSwYKhq~6a4/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-340",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "7.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-24T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "4f02f32b3ac8f9d02e29fc8f94b461e6"
+  },
+  "payload_sha256": "5ee4a31b8f1cb015cbadfafe05aa3dd9a44bf9223105c367c37fc015cbaa9649"
+}
