@@ -1,0 +1,137 @@
+{
+  "inventory_id": "MW-2026-344",
+  "price_disclosed": "6.95",
+  "scheduled_eastern": "2026-11-30T07:00:00-05:00",
+  "publication_label": "Monday, November 30, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed the proposed $6.95, shipping and Monday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-344",
+    "product": {
+      "title": "Silver Nutmeg Norah Lofts 1948 Doubleday Hardcover No Dust Jacket",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Silver Nutmeg</h2><p>Norah Lofts\u2019s historical novel in a Doubleday cloth hardcover with silver lettering and decoration on the spine.</p><h3>Condition</h3><p>Spine ends show rubbing and discoloration. The boards and corners show light wear. Pages are age-toned, and a prior business label is affixed to the front endpaper. No dust jacket. Pages have not been checked individually.</p><h3>Details</h3><ul><li>Doubleday &amp; Company, Garden City, New York. Title page dated 1948, with a 1947 copyright. Printing unconfirmed.</li><li>English-language cloth hardcover. Approx. 8 \u00d7 5\u00be \u00d7 1\u00bd in. and 1 lb 2 oz before packing.</li></ul><h3>Included</h3><p>One hardcover book.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Spine ends show rubbing and discoloration. The boards and corners show light wear. Pages are age-toned, and a prior business label is affixed to the front endpaper. No dust jacket. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Silver Nutmeg"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Norah Lofts"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Doubleday & Company"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1948"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Historical Fiction"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/GHUAAeSw9e5q~7PD/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wAIAAeSwhvpq~7PE/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/GPEAAeSw~hZq~7PF/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/HGsAAeSwAl9q~7PH/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/w1oAAeSw4h1q~7PI/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/xBcAAeSwtMVq~7PJ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/HYAAAeSwFO9q~7PK/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-344",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "6.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-30T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 8,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 14
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "3112c31982fb013b688843dd168cb7fc"
+  },
+  "payload_sha256": "f42a3820e2a1b0aff3dbd8e6ca2788490020e2c5bbf61f2f33365475dc9fcfa7"
+}
