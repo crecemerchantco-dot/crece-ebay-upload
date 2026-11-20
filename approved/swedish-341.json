@@ -1,0 +1,149 @@
+{
+  "inventory_id": "MW-2026-341",
+  "price_disclosed": "19.95",
+  "scheduled_eastern": "2026-11-25T07:00:00-05:00",
+  "publication_label": "Wednesday, November 25, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed the proposed price and Wednesday timing on eBay.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-341",
+    "product": {
+      "title": "Swedish Challenge Americas Cup 1980 Sverige Sailing Hardcover Molnlycke",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Swedish Challenge Americas Cup 1980</h2><p>This illustrated hardcover presented by M\u00f6lnlycke documents Sweden\u2019s 1980 America\u2019s Cup challenge and includes a crew photograph aboard the yacht Sverige.</p><h3>Condition</h3><p>Blue boards show scuffs, rubbed edges and corners, and wear at the spine ends. The photographed interior pages show light toning. No dust jacket included. Pages have not been checked individually.</p><h3>Details</h3><ul><li>Written and edited by Johannes G\u00f6ranson. Printed in G\u00f6teborg, Sweden, in 1980.</li><li>English, 96 numbered pages. ISBN 91-7260-379-8.</li><li>Approx. 12 \u00d7 8\u00bd \u00d7 \u00bd in. and 1 lb 6 oz before packing.</li></ul><h3>Included</h3><p>One hardcover book.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Ground Advantage. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Blue boards show scuffs, rubbed edges and corners, and wear at the spine ends. The photographed interior pages show light toning. No dust jacket included. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Swedish Challenge Americas Cup 1980"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Johannes G\u00f6ranson"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1980"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Sports & Recreation"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Sailing"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Sweden"
+          ]
+        },
+        {
+          "name": "Number of Pages",
+          "values": [
+            "96"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/UrcAAeSwtgZq~6iE/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vjoAAeSwMj9q~6iF/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TVgAAeSw2RBq~6iG/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/xOUAAeSwZ21q~6iH/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Wx4AAeSwqmhq~6iI/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wRwAAeSwuHdq~6iJ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/S3sAAeSw2Opq~6iK/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-341",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "19.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-25T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 14,
+            "width": 10,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 2
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "92a4a607d52209cb80736e8048da9152"
+  },
+  "payload_sha256": "b08d1b89fe5ec2c309f222156471a85f65b446ccd0c2e538ec555cc63b3d8c2d"
+}
