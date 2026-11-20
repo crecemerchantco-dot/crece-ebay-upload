@@ -1,0 +1,143 @@
+{
+  "inventory_id": "MW-2026-342",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-28T07:00:00-05:00",
+  "publication_label": "Saturday, November 28, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed $14.95 and Saturday November 28 after disclosure of shipping and time.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-342",
+    "product": {
+      "title": "Decorating Ideas for Casual Living Barbara Taylor Bradford 1977 1st Print HC DJ",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Decorating Ideas for Casual Living</h2><p>Barbara Taylor Bradford\u2019s illustrated guide to decorating country, beach and vacation homes features color photographs of 1970s interiors.</p><h3>Condition</h3><p>Dust jacket shows light edge and corner wear, minor creasing and surface marks. The photographed pages appear clean. Pages have not been checked individually.</p><h3>Details</h3><ul><li>Simon &amp; Schuster, 1977. First printing with the full 1\u201310 number line.</li><li>English-language hardcover with dust jacket. ISBN 0-671-21969-3.</li><li>Approx. 10\u00bd \u00d7 8\u00bc \u00d7 1 in. and 1 lb 15 oz before packing.</li></ul><h3>Included</h3><p>One hardcover book with dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Dust jacket shows light edge and corner wear, minor creasing and surface marks. The photographed pages appear clean. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Decorating Ideas for Casual Living"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Barbara Taylor Bradford"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Simon & Schuster"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1977"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9780671219697"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Interior Design"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/dXEAAeSwImxq~62i/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Zr0AAeSwBohq~62j/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/reAAAeSwzu1q~62k/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/d0cAAeSw7UZq~62l/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/dYoAAeSwImxq~62m/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ftcAAeSwqmhq~62n/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/hq4AAeSwybJq~62n/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-342",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-28T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 12
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "5f96c041539004af5919b757816d8ef7"
+  },
+  "payload_sha256": "98ca12c40ceee060477595c50d4c776b6a544849c8ded10b9aa9f975fdc3fe58"
+}
