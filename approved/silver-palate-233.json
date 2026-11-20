@@ -1,0 +1,143 @@
+{
+  "inventory_id": "MW-2026-233",
+  "price_disclosed": "4.95",
+  "scheduled_eastern": "2026-11-26T07:00:00-05:00",
+  "publication_label": "Thursday, November 26, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner set $4.95 and confirmed the previously disclosed Thursday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-233",
+    "product": {
+      "title": "The Silver Palate Cookbook Julee Rosso Sheila Lukins Workman Paperback",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>The Silver Palate Cookbook</h2><p>Recipes, menus and entertaining ideas from Julee Rosso and Sheila Lukins\u2019s Manhattan gourmet shop, written with Michael McLaughlin and illustrated by Lukins.</p><h3>Condition</h3><p>Acceptable. Covers show heavy edge and corner wear, creases, soiling, a small round hole and surface damage near the upper-right front cover, and a tear along the top of the back cover. Some page staining and waviness visible. Pages and binding have not been checked individually.</p><h3>Details</h3><ul><li>Workman Publishing trade paperback, in English</li><li>First published in 1982. This copy is a later printing with number line 30 29.</li><li>ISBN 0-89480-204-6. Approx. 10 \u00d7 7\u00bd \u00d7 1 in. and 1 lb 13 oz before packing.</li></ul><h3>Included</h3><p>One paperback cookbook.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Ground Advantage. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Acceptable. Covers show heavy edge and corner wear, creases, soiling, a small round hole and surface damage near the upper-right front cover, and a tear along the top of the back cover. Some page staining and waviness visible. Pages and binding have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "The Silver Palate Cookbook"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Julee Rosso, Sheila Lukins and Michael McLaughlin"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Trade Paperback"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Workman Publishing"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9780894802041"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cookbooks"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Cooking"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ydAAAeSwZ21q~6oI/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/xUYAAeSw5J9q~6oJ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VpMAAeSw-Ctq~6oK/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VnMAAeSwfcdq~6oL/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/h5gAAeSwICBq~6oM/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/V0AAAeSwAshq~6oN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VCsAAeSwsipq~6oO/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "261186"
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-233",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "4.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-26T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 9,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 8
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "c9f809ac66ab2e088c1f0f11373e76a7"
+  },
+  "payload_sha256": "3764c7038fe5395ae3c724bf44feb6fd42c448f5ca044b017635ce2e6f508cf3"
+}
