@@ -1,0 +1,150 @@
+{
+  "inventory_id": "MW-2026-232",
+  "price_disclosed": "4.95",
+  "scheduled_eastern": "2026-11-27T07:00:00-05:00",
+  "publication_label": "Friday, November 27, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner accepted proposed price, shipping and Friday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-232",
+    "product": {
+      "title": "American Wholefoods Cuisine Goldbeck 1983 First Printing Hardcover Dust Jacket",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>American Wholefoods Cuisine</h2><p>Nikki and David Goldbeck\u2019s vegetarian cookbook collects more than 1,300 meatless recipes, from quick meals to breads, desserts and dinner menus.</p><h3>Condition</h3><p>Dust jacket has rubbed edges and corners, small tears and chips at the spine ends, and light surface marks. Photographed pages show mild age toning. Pages and binding have not been checked individually.</p><h3>Details</h3><ul><li>NAL Books / New American Library hardcover with dust jacket</li><li>Stated first printing, April 1983, with number line beginning at 1</li><li>English. ISBN 0-453-00434-2.</li><li>Approx. 9\u00bd \u00d7 6 \u00d7 2 in. and 2 lb 2 oz before packing.</li></ul><h3>Included</h3><p>One hardcover cookbook with dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Dust jacket has rubbed edges and corners, small tears and chips at the spine ends, and light surface marks. Photographed pages show mild age toning. Pages and binding have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "American Wholefoods Cuisine"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Nikki Goldbeck and David Goldbeck"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "New American Library"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1983"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9780453004343"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cookbooks"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Vegetarian Cooking"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ca8AAeSwhwNq~6vL/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ZX0AAeSwLjFq~6vN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/n-cAAeSwtIBq~6vO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/kMsAAeSws-Rq~6vP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/kq0AAeSwbvdq~6vQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/aNUAAeSwKxZq~6vR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ktcAAeSwMURq~6vS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/YpgAAeSwfUJq~6vT/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-232",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "4.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-27T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 8,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "5336768fb268505c7241d3e6b64868d4"
+  },
+  "payload_sha256": "d04bf120db70b49897b511c6f2e72b34c39ff24e8835578bc993f90e27016540"
+}
