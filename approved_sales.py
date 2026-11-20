@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'swedish-341': ('swedish-341.json', 'MW-2026-341', '19.95', '2026-11-25T12:00:00Z'),
     'unvanquished-340': ('unvanquished-340.json', 'MW-2026-340', '7.95', '2026-11-24T12:00:00Z'),
     'austen-339': ('austen-339.json', 'MW-2026-339', '39.95', '2026-11-23T12:00:00Z'),
     'hemingway-338': ('hemingway-338.json', 'MW-2026-338', '8.95', '2026-11-22T12:00:00Z'),
