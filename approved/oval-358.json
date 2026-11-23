@@ -1,0 +1,108 @@
+{
+  "inventory_id": "MW-2026-358",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-28T07:00:00-05:00",
+  "publication_label": "Saturday, November 28, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner authorized the disclosed listing and requested Saturday publication.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-358",
+    "product": {
+      "title": "Vintage Oneida Community Plate Oval Silverplate Dish Floral Swags 9 Inch",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Oneida Community Plate Oval Silverplate Dish</h2><p>Shallow oval silverplate dish with a ribbed rim and floral swags at both ends. Stamped COMMUNITY PLATE underneath.</p><h3>Condition</h3><p>Heavy dark iridescent tarnish, numerous scratches and reddish wear spots. See photos.</p><h3>Details</h3><p>Approximately 9 \u00d7 4\u00bd \u00d7 \u00bd inches and 6 oz unpacked.</p><h3>Included</h3><p>One dish.</p><h3>Packing &amp; Shipping</h3><p>Padded in a rigid box. Buyer-paid calculated USPS Ground Advantage. 30-day buyer-paid returns.</p></div>",
+      "categories": {
+        "primaryCategoryId": "39438"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Heavy dark iridescent tarnish, numerous scratches and reddish wear spots. See photos."
+      },
+      "aspects": [
+        {
+          "name": "Composition",
+          "values": [
+            "Silverplate"
+          ]
+        },
+        {
+          "name": "Brand",
+          "values": [
+            "Oneida"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vhAAAeSwzfVrBM4j/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/WEYAAeSwfH5rBM4k/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlg4NjQ=/z/Z30AAeSwv1VrBM4l/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/V7YAAeSwl3drBM4m/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/WBQAAeSwY-1rBM4o/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i0wAAeSwGUBrBM4p/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/lYgAAeSwkDBrBM4q/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/isQAAeSww4BrBM4r/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-358",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-28T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 7,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 0,
+            "minorUnit": 14
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "de8ea0418683aa3b6fcab6942b0d115e"
+  },
+  "payload_sha256": "709a4b443dc8732474324e2b50ee26482f873e14dfa7b4c4df0f508633b04450"
+}
