@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'mexico-294': ('mexico-294.json', 'MW-2026-294', '19.95', '2026-11-25T12:00:00Z'),
     'eurorails-356': ('eurorails-356.json', 'MW-2026-356', '39.95', '2026-11-22T12:00:00Z'),
     'nutmeg-344': ('nutmeg-344.json', 'MW-2026-344', '6.95', '2026-11-30T12:00:00Z'),
     'child-343': ('child-343.json', 'MW-2026-343', '2.95', '2026-11-29T12:00:00Z'),
