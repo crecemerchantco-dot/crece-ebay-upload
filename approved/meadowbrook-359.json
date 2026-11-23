@@ -1,0 +1,108 @@
+{
+  "inventory_id": "MW-2026-359",
+  "price_disclosed": "9.95",
+  "scheduled_eastern": "2026-11-29T07:00:00-05:00",
+  "publication_label": "Sunday, November 29, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved disclosed price and Sunday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-359",
+    "product": {
+      "title": "Wm A Rogers Meadowbrook Silverplate Small Round Dish Leaf Border 5 1/2 Inch",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Wm. A. Rogers Meadowbrook Silverplate Dish</h2><p>Small round dish with a raised leaf border and a worn Meadowbrook / Wm. A. Rogers mark underneath.</p><h3>Condition</h3><p>Heavy mottled tarnish, scratches and discoloration, with greenish and reddish spots underneath.</p><h3>Details</h3><p>Approximately 5\u00bd inches diameter and \u00bc inch high. Weight 3 oz unpacked.</p><h3>Included</h3><p>One dish.</p><h3>Packing &amp; Shipping</h3><p>Padded in a rigid box. Buyer-paid calculated USPS Ground Advantage. 30-day buyer-paid returns.</p></div>",
+      "categories": {
+        "primaryCategoryId": "39438"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Heavy mottled tarnish, scratches and discoloration, with greenish and reddish spots underneath."
+      },
+      "aspects": [
+        {
+          "name": "Composition",
+          "values": [
+            "Silverplate"
+          ]
+        },
+        {
+          "name": "Brand",
+          "values": [
+            "Wm. A. Rogers"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ksgAAeSwdj1rBNBS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/oQwAAeSwfkVrBNBT/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/k04AAeSwno5rBNBU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/Ln0AAeSwODFrBNBV/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/3~0AAeSwRQVrBNBW/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/lcQAAeSw831rBNBX/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/n5sAAeSwRrZrBNBZ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ltEAAeSwoVJrBNBa/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-359",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "9.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-29T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 8,
+            "width": 8,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 0,
+            "minorUnit": 10
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "92f403f6be083df68ac6a4f3f5fb2792"
+  },
+  "payload_sha256": "25c81c1e238df98f331eb86c1514a2710cf1cd6da1ccf6d2699969e57afbbce1"
+}
