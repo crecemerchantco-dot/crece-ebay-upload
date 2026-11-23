@@ -1,0 +1,101 @@
+{
+  "inventory_id": "MW-2026-357",
+  "price_disclosed": "11.95",
+  "scheduled_eastern": "2026-11-26T07:00:00-05:00",
+  "publication_label": "Thursday, November 26, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed the disclosed price and Thursday 7 a.m. Eastern schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-357",
+    "product": {
+      "title": "Silverplate Covered Butter Dish Ribbed Loop Handle Rope Edge Tray 8 3/8 in",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Silverplate Covered Butter Dish</h2><p>Rectangular covered butter dish with a ribbed loop handle and rope-edge tray.</p><h3>Condition</h3><p>Heavy dark tarnish and mottling, scratches, and copper-colored wear spots. Maker unconfirmed. Includes lid and tray only; no glass liner.</p><h3>Details</h3><p>Approximately 8\u215c \u00d7 4\u00bc \u00d7 3\u00bc inches. The underside has a worn stamp, shown in the photos.</p><h3>Included</h3><p>One lid and one tray.</p><h3>Packing &amp; Shipping</h3><p>The lid and tray are padded separately. Buyer-paid calculated USPS Ground Advantage. 30-day buyer-paid returns.</p></div>",
+      "categories": {
+        "primaryCategoryId": "163050"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Heavy dark tarnish and mottling, scratches, and copper-colored wear spots. Maker unconfirmed. Includes lid and tray only; no glass liner."
+      },
+      "aspects": [
+        {
+          "name": "Composition",
+          "values": [
+            "Silverplate"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/QhMAAeSwOwRrBMqw/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/rW0AAeSw~WZrBMqx/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/d74AAeSwuztrBMqy/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/fVsAAeSwRTlrBMq0/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/QvQAAeSwtZprBMq1/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/d3sAAeSwX4ZrBMq3/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/v-QAAeSwQClrBMq5/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-357",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "11.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-26T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 11,
+            "width": 7,
+            "height": 6
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 8
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "a7b0c3ee0ffe43d81a9e5e349fd50298"
+  },
+  "payload_sha256": "6a83daec2586d1ed3b6c602340fb2baea5e72f7f17faecc0c1e44334da65f50b"
+}
