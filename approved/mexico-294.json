@@ -1,0 +1,156 @@
+{
+  "inventory_id": "MW-2026-294",
+  "price_disclosed": "19.95",
+  "scheduled_eastern": "2026-11-25T07:00:00-05:00",
+  "publication_label": "Wednesday, November 25, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed $19.95 after requesting Wednesday publication. Approved terms recorded in master inventory.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-294",
+    "product": {
+      "title": "Mexico The Beautiful Cookbook Hardcover Stonehenge 1992 Palazuelos Dust Jacket",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>M\u00e9xico: The Beautiful Cookbook</h2><p>An oversized illustrated cookbook exploring regional Mexican cooking, with recipes by Susanna Palazuelos, text by Marilyn Tausend, and photographs by Ignacio Urquiza.</p><h3>Condition</h3><p>Used hardcover with dust jacket. The jacket shows surface scuffing and edge/corner wear, with a sticker on the rear. Pictured pages appear clean. Please review the photographs for condition.</p><h3>Details</h3><ul><li>Stonehenge Press / Weldon Owen</li><li>Copyright 1991; 1992 reprint stated</li><li>ISBN 0867066164</li><li>English language</li><li>Approximately 14 1/4 \u00d7 10 3/8 \u00d7 1 inches; bare book weight 4 lb 8 oz</li></ul><h3>Included</h3><p>One hardcover book with dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Carefully boxed with protection for the covers and corners. Buyer-paid calculated USPS Media Mail shipping. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Used hardcover with dust jacket. Jacket has surface scuffs, edge/corner wear and a sticker on the rear. Pictured pages appear clean. Full page-by-page completeness and binding inspection not confirmed."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "M\u00e9xico: The Beautiful Cookbook"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Susanna Palazuelos and Marilyn Tausend"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Stonehenge Press"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "1992"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9780867066166"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Cookbooks"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Mexican Cooking"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Dust Jacket"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/8q8AAeSwJB5rBLkB/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Jr4AAeSw-fRrBLj6/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/KCcAAeSwPDxrBLkA/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/JZ0AAeSww4BrBLj-/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/MG0AAeSws-hrBLj~/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/840AAeSwY-1rBLj8/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/buIAAeSwtDBrBLj9/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/JYIAAeSww4BrBLj5/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-294",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "19.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-25T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 17,
+            "width": 13,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 6,
+            "minorUnit": 4
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "5176a5e203a3016ccdea59160a7fb5ea"
+  },
+  "payload_sha256": "ac3920a0625acbf1932657e452fcac5ad474b229c5b202cbb47adc1da459b744"
+}
