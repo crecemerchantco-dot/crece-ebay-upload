@@ -1,0 +1,152 @@
+{
+  "inventory_id": "MW-2026-295",
+  "price_disclosed": "18.95",
+  "scheduled_eastern": "2026-11-24T07:00:00-05:00",
+  "publication_label": "Tuesday, November 24, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed proposed price and Tuesday 7 a.m. Eastern schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-295",
+    "product": {
+      "title": "Champagne Wine of Kings and King of Wines Tom Bruce-Gardyne 2021 Hardcover",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Champagne: Wine of Kings and the King of Wines</h2><p>Tom Bruce-Gardyne's illustrated guide to the Champagne region, its history and winemaking, with profiles of producers and tasting notes.</p><h3>Condition</h3><p>Dust jacket shows surface scuffing, edge and corner wear, a small white abrasion on the front, and creasing near the upper rear corner. Photographed pages appear clean. Pages have not been checked individually.</p><h3>Details</h3><ul><li>2021 Welbeck hardcover with dust jacket, in English.</li><li>ISBN 9781787392861.</li><li>Approximately 11\u00bc \u00d7 10 \u00d7 1 inches and 2 lb 13 oz before packing.</li></ul><h3>Included</h3><p>One hardcover book with dust jacket.</p><h3>Packing &amp; Shipping</h3><p>Boxed with corner protection. Buyer-paid calculated USPS Media Mail. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "5000",
+        "conditionDescription": "Dust jacket shows surface scuffing, edge and corner wear, a small white abrasion on the front, and creasing near the upper rear corner. Photographed pages appear clean. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Champagne: Wine of Kings and the King of Wines"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Tom Bruce-Gardyne"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Welbeck"
+          ]
+        },
+        {
+          "name": "Publication Year",
+          "values": [
+            "2021"
+          ]
+        },
+        {
+          "name": "ISBN",
+          "values": [
+            "9781787392861"
+          ]
+        },
+        {
+          "name": "Topic",
+          "values": [
+            "Wine"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Dust Jacket"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/XE4AAeSwGUBrBMNK/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/b9IAAeSwmqprBMNL/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/XwsAAeSwP~RrBMNM/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/Xw0AAeSwP~RrBMNN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/XdkAAeSwoVJrBMNO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/b-4AAeSwYttrBMNP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/XZsAAeSwcKBrBMNQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pNAAAeSwtDBrBMNR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/TKUAAeSwOzRrBMNS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ptEAAeSweltrBMNT/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-295",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "18.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-24T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 13,
+            "width": 12,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "15382f00c32fccd99e6728265aff2d3c"
+  },
+  "payload_sha256": "1174039f69ce3058ab0149661a741d612a91e96e89f3cff4856a2c2d443090f1"
+}
