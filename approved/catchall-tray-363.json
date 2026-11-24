@@ -1,0 +1,124 @@
+{
+  "inventory_id": "MW-2026-363",
+  "price_disclosed": "12.95",
+  "scheduled_eastern": "2026-11-29T07:00:00-05:00",
+  "publication_label": "Sunday, November 29, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved disclosed sale terms and chose Sunday November 29.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-363",
+    "product": {
+      "title": "Silver-Tone Rectangular Catchall Tray with Clipped Corners 9 5/8 in",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Silver-Tone Rectangular Catchall Tray with Clipped Corners 9 5/8 in</h2><p>A shallow rectangular tray with clipped corners and a raised rim for keys, coins or small desk items.</p><h3>Condition</h3><p>Heavy tarnish, scratches, uneven finish and rim wear. See photos of front and underside.</p><h3>Details</h3><p>9\u215d \u00d7 6 \u00d7 \u215d inches. Weighs 6.6 oz. No maker\u2019s mark visible. Metal composition unverified.</p><h3>Included</h3><p>One tray.</p><h3>Packing &amp; Shipping</h3><p>Packed with padding in a box. Buyer-paid calculated shipping. Returns accepted within 30 days, with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "36019"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Heavy tarnish, scratches, uneven finish and rim wear. See photos of front and underside."
+      },
+      "aspects": [
+        {
+          "name": "Type",
+          "values": [
+            "Tray"
+          ]
+        },
+        {
+          "name": "Brand",
+          "values": [
+            "Unbranded"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Metal"
+          ]
+        },
+        {
+          "name": "Shape",
+          "values": [
+            "Rectangle"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/ty0AAeSwtZprBQiP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/My0AAeSwj~RrBQiQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/mIUAAeSwKodrBQiR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/6scAAeSw-fRrBQiS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/7IQAAeSwX4ZrBQiT/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/NSAAAeSweltrBQiV/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-363",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "12.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-29T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 8,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 0,
+            "minorUnit": 14
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "f96405a612749820278efafa403bf2f2"
+  },
+  "payload_sha256": "77d06d7c1d0aac0e9526fe2436e57f8b0e8fe05b89859764f7e193f9f248264c"
+}
