@@ -1,0 +1,121 @@
+{
+  "inventory_id": "MW-2026-362",
+  "price_disclosed": "32.95",
+  "scheduled_eastern": "2026-11-28T07:00:00-05:00",
+  "publication_label": "Saturday, November 28, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner explicitly approved both prices and the November 28 start time.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-362",
+    "product": {
+      "title": "Two Silk Pocket Squares Black Red Paisley and Blue Gray Ivory Set of 2",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Two Silk Pocket Squares Black Red Paisley and Blue Gray Ivory Set of 2</h2><p>Two squares sold as one lot. Black and red paisley, 18 &times; 18 inches. Blue-gray and ivory, 15 &times; 15 inches. The seller identifies both as silk. Neither has a maker or fiber label.</p><h3>Condition</h3><p>Pre-owned with visible fold creases.</p><h3>Packing &amp; Shipping</h3><p>Ships in a protective mailer with buyer-paid calculated shipping. Returns accepted within 30 days, with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "167902"
+      },
+      "aspects": [
+        {
+          "name": "Type",
+          "values": [
+            "Pocket Square"
+          ]
+        },
+        {
+          "name": "Brand",
+          "values": [
+            "Unbranded"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/jJEAAeSwq6prBQPm/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/yxoAAeSwGNhrBQPn/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlg4NjQ=/z/v9kAAeSwenBrBQPo/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vL4AAeSwMt9rBQPp/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wMUAAeSwPDxrBQPq/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/0eQAAeSw2I5rBQPr/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/jKMAAeSwtZprBQPs/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/CI0AAeSwj~RrBQPt/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/rwcAAeSwOzRrBQPu/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with visible fold creases."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-362",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "32.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-28T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 10,
+            "width": 8,
+            "height": 1
+          },
+          "packageWeight": {
+            "majorUnit": 0,
+            "minorUnit": 5
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "d661c4186aec63c9fb520b5b772a1ae2"
+  },
+  "payload_sha256": "e9f36a4347032e01336f6822d4ea63ab866ded41debfe537ad954184cf94451b"
+}
