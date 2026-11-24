@@ -17,6 +17,8 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'givenchy-361': ('givenchy-361.json', 'MW-2026-361', '44.95', '2026-11-28T12:00:00Z'),
+    'silk-pocket-squares-362': ('silk-pocket-squares-362.json', 'MW-2026-362', '32.95', '2026-11-28T12:00:00Z'),
     'surrealist-clock-360': ('surrealist-clock-360.json', 'MW-2026-360', '179.95', '2026-11-24T12:00:00Z'),
     'meadowbrook-359': ('meadowbrook-359.json', 'MW-2026-359', '9.95', '2026-11-29T12:00:00Z'),
     'oval-358': ('oval-358.json', 'MW-2026-358', '14.95', '2026-11-28T12:00:00Z'),
