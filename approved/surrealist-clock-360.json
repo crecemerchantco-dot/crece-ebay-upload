@@ -1,0 +1,102 @@
+{
+  "inventory_id": "MW-2026-360",
+  "price_disclosed": "179.95",
+  "scheduled_eastern": "2026-11-24T07:00:00-05:00",
+  "publication_label": "Tuesday, November 24, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner confirmed the disclosed prices and launch date and time.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-360",
+    "product": {
+      "title": "Surrealist Clock Art Canvas Panel Signed Melanie Wolk 11 x 14 Unframed",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Surrealist Clock Artwork on Canvas Panel</h2><p>A distorted clock face mixes Roman and Arabic numerals, with bold white arrows and a splash of sky blue against warm ochre and olive tones. The composition has a playful sense of movement that draws you in for a closer look.</p><h3>Condition</h3><p>Unframed, with a few small surface marks visible in the close-up photos.</p><h3>Details</h3><p>The lower-right signature appears to read &ldquo;Melanie Wolk.&rdquo; An artist by that name exhibited at Artexpo New York in 2010, and <em>Art World News</em> profiled her paintings and prints in 2011. The attribution, medium, and date of this piece are unverified. The reverse has an Aaron Brothers artist's canvas label.</p><h3>Included</h3><p>One unframed 11 &times; 14-inch canvas panel.</p><h3>Packing &amp; Shipping</h3><p>Packed flat in a box with rigid face protection. Buyer-paid calculated shipping. Returns accepted within 30 days, with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "551"
+      },
+      "aspects": [
+        {
+          "name": "Style",
+          "values": [
+            "Surrealism"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Canvas"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/K8QAAeSw-xZrBPhw/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/YMoAAeSwenBrBPhx/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/aioAAeSwhLFrBPhy/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/K-UAAeSw-xZrBPhz/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/LecAAeSw4xVrBPh0/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/qvEAAeSwNctrBPh1/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-360",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "179.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-24T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 17,
+            "width": 14,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "68e36b7e99f23fe44eb761dc14272620"
+  },
+  "payload_sha256": "746ad0c3dbf6042e27b39970007003fb7ee8ae341e8ff5f2cf494ae876fea423"
+}
