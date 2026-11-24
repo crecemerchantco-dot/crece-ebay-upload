@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'surrealist-clock-360': ('surrealist-clock-360.json', 'MW-2026-360', '179.95', '2026-11-24T12:00:00Z'),
     'meadowbrook-359': ('meadowbrook-359.json', 'MW-2026-359', '9.95', '2026-11-29T12:00:00Z'),
     'oval-358': ('oval-358.json', 'MW-2026-358', '14.95', '2026-11-28T12:00:00Z'),
     'butter-357': ('butter-357.json', 'MW-2026-357', '11.95', '2026-11-26T12:00:00Z'),
