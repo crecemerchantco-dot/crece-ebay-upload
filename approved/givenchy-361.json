@@ -1,0 +1,137 @@
+{
+  "inventory_id": "MW-2026-361",
+  "price_disclosed": "44.95",
+  "scheduled_eastern": "2026-11-28T07:00:00-05:00",
+  "publication_label": "Saturday, November 28, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner explicitly approved both prices and the November 28 start time.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-361",
+    "product": {
+      "title": "Givenchy Italian Silk Geometric Pocket Square 18 x 18 Blue Gray Rust",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Givenchy Italian Silk Geometric Pocket Square 18 x 18 Blue Gray Rust</h2><p>18 &times; 18 inches. Slate blue, gray and rust red geometric print with a dark border and GIVENCHY printed in the corner. The sewn label reads &ldquo;All Silk&rdquo; and &ldquo;Made in Italy.&rdquo; The last line appears to read &ldquo;For Block Fr&egrave;res.&rdquo;</p><h3>Condition</h3><p>Pre-owned with visible fold creases. A loose thread near the label is shown in the close-up.</p><h3>Packing &amp; Shipping</h3><p>Ships in a protective mailer with buyer-paid calculated shipping. Returns accepted within 30 days, with buyer-paid return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "167902"
+      },
+      "aspects": [
+        {
+          "name": "Type",
+          "values": [
+            "Pocket Square"
+          ]
+        },
+        {
+          "name": "Brand",
+          "values": [
+            "Givenchy"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Silk"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Geometric"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Italy"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/wCEAAeSwoVJrBQPO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i-0AAeSwY-1rBQPQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vDAAAeSwMt9rBQPR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/9cUAAeSw~WZrBQPS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/B3gAAeSwRWZrBQPT/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/vQIAAeSwdjlrBQPU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i1UAAeSwWv1rBQPV/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with visible fold creases. A loose thread near the label is shown in the close-up."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-361",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "44.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-28T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 9,
+            "width": 7,
+            "height": 1
+          },
+          "packageWeight": {
+            "majorUnit": 0,
+            "minorUnit": 4
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "1cd1fe1497cbcc66b2947362098b974a"
+  },
+  "payload_sha256": "734a9ce995130aa6e8cb832f8d49495cc8d5a66449f4f78fd7971b4498a8cbe8"
+}
