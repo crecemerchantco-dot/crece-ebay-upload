@@ -1,0 +1,164 @@
+{
+  "inventory_id": "MW-2026-372",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-27T07:00:00-05:00",
+  "publication_label": "Friday, November 27, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner authorized the previous Apt. 9 draft at disclosed $14.95 price, estimated shipping weight, and Friday scheduling.",
+  "shipping_description": "Buyer-paid calculated shipping; estimated packed weight 1 lb, 12 x 10 x 2 inch mailer.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-372",
+    "product": {
+      "title": "Apt 9 Premier Flex No Iron Shirt Mens XL Navy Geometric Long Sleeve Button Up",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px\"><h2>Apt. 9 Premier Flex No Iron Shirt</h2><p>The navy geometric microprint adds subtle pattern under a blazer. This Apt. 9 Premier Flex No Iron shirt is tagged men\u2019s XL and has long sleeves with adjustable button cuffs.</p><h3>Condition</h3><p>Pre-owned. See the close-up photos for the collar, cuffs and buttons.</p><h3>Details</h3><ul><li>60% cotton, 37% polyester, 3% spandex.</li><li>Made in Bangladesh. Machine wash cold.</li><li>Chest pit to pit 25.25 inches; shoulders 20 inches; back length 30.25 inches; sleeve shoulder to cuff 26.5 inches; neck 17.25 inches.</li></ul><h3>Included</h3><p>One shirt.</p><h3>Packing &amp; Shipping</h3><p>Ships folded in a protective mailer. Buyer-paid calculated shipping. Returns accepted within 30 days, buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "57991"
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Apt. 9"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XL"
+          ]
+        },
+        {
+          "name": "Size Type",
+          "values": [
+            "Regular"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Geometric"
+          ]
+        },
+        {
+          "name": "Sleeve Length",
+          "values": [
+            "Long Sleeve"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Cotton Blend"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Bangladesh"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Dress Shirt"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Stretch"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTU0/z/POoAAeSwmZhrButv/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/SVkAAeSwhRFrButw/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUw/z/R5gAAeSw5iprButx/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/U-cAAeSwO1trButy/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VDkAAeSwzy1rBut0/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/O04AAeSwLPFrBut1/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/VEAAAeSwzy1rBut2/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTIwNlgxNTM2/z/SXoAAeSwtYprBut4/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/VFEAAeSwEalrBut5/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/SasAAeSwIk9rBut6/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned. See close-up photos of collar, cuffs and buttons."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-372",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-27T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "4377cb3fe5b2081611b86d16686889a4"
+  },
+  "payload_sha256": "7fd4c37d1374e2607cb13294ff060d35a4c0155a8c2ed24bf69cae34f34a9adf"
+}
