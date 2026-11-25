@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'apt-nine-372': ('apt-nine-372.json', 'MW-2026-372', '14.95', '2026-11-27T12:00:00Z'),
     'thomas-dean-373': ('thomas-dean-373.json', 'MW-2026-373', '24.95', '2026-11-27T12:00:00Z'),
     'william-tell-367': ('william-tell-367.json', 'MW-2026-367', '44.95', '2026-12-02T12:00:00Z'),
     'morse-code-366': ('morse-code-366.json', 'MW-2026-366', '24.95', '2026-12-01T12:00:00Z'),
