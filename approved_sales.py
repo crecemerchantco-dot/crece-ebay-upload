@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'salem-north-star-364': ('salem-north-star-364.json', 'MW-2026-364', '19.95', '2026-11-29T12:00:00Z'),
     'catchall-tray-363': ('catchall-tray-363.json', 'MW-2026-363', '12.95', '2026-11-29T12:00:00Z'),
     'givenchy-361': ('givenchy-361.json', 'MW-2026-361', '44.95', '2026-11-28T12:00:00Z'),
     'silk-pocket-squares-362': ('silk-pocket-squares-362.json', 'MW-2026-362', '32.95', '2026-11-28T12:00:00Z'),
