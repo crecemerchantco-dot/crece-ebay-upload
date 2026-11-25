@@ -14,6 +14,7 @@ from ebay_listing import LISTING_SCOPE, MAX_BUNDLE_BYTES, load_upload, validate_
 from ebay_publish import PublishError, approval, schedule_approved_book
 from resale_routes import register as register_resale, owner_signed_in, setup_ready
 from approved_sales import register as register_approved
+from ebay_drafts import register as register_drafts
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'development-only-change-me')
@@ -87,6 +88,7 @@ def index():
 <form action="{{ url_for('disconnect') }}" method="post"><button type="submit">Disconnect eBay</button></form>
 {% endif %}<p><a href="{{ url_for('checks') }}">Check listing connection</a></p>
 <p><a href="{{ url_for('listing_validation') }}">Check a prepared listing with eBay</a></p>
+<p><a href="{{ url_for('draft_form') }}">Save to eBay Drafts</a></p>
 <p><a href="{{ url_for('approved_home') }}">Open approved listings</a></p>
 {% if workspace_ready %}<p><a href="{{ url_for('resale_home') }}">Open my resale workspace</a></p>{% endif %}
 <p><a href="{{ url_for('privacy') }}">Privacy policy</a></p>
@@ -100,7 +102,7 @@ def health():
 
 @app.get('/privacy')
 def privacy():
-    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Local intake checks stay within this app. If you enable listing checks and upload a prepared listing package, its product and selling details are sent to eBay in validation-only mode. This requires eBay listing permission, without creating a listing during that check.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. Listing checks do not publish. A separate scheduling page can create the specifically approved Kitcho book listing only after an authenticated seller submits that action. Its approved product details and creation key are stored in the application repository; seller tokens remain in process memory. Scheduling results can be downloaded by the seller for catalog reconciliation. The private resale workspace requires an owner password and separate catalog connection. When configured, it records approved listing details, validation results, eBay IDs and receipts in a durable database and writes verified listing results to the master catalog. It does not store seller OAuth credentials in that database.</p><p>Contact: crecemerchantco@gmail.com</p>''')
+    return page('Privacy Policy — Crece Merchant Co', '''<p>This private seller application uses eBay OAuth to upload photographs to eBay. If you enable listing connection checks, it also reads your shipping, return and payment policy names and identifiers. Category requirements are retrieved using application authorization. Local intake checks stay within this app. If you enable listing checks and upload a prepared listing package, its product and selling details are sent to eBay in validation-only mode. This requires eBay listing permission, without creating a listing during that check.</p><p>OAuth tokens and temporary photos are held in server memory; photos are temporarily available at unguessable public links so eBay can fetch them. Photos expire from the app after approximately 30 minutes or upon a server restart, whichever comes first. The hosting provider may retain request logs. Listing checks perform validation. The draft form sends listing details and photo URLs to eBay’s Sell Feed API with the Draft action. eBay stores processed drafts in Seller Hub for review. A separate scheduling page can create the specifically approved Kitcho book listing only after an authenticated seller submits that action. Its approved product details and creation key are stored in the application repository; seller tokens remain in process memory. Scheduling results can be downloaded by the seller for catalog reconciliation. The private resale workspace requires an owner password and separate catalog connection. When configured, it records approved listing details, validation results, eBay IDs and receipts in a durable database and writes verified listing results to the master catalog. It does not store seller OAuth credentials in that database.</p><p>Contact: crecemerchantco@gmail.com</p>''')
 
 
 @app.get('/login')
@@ -119,6 +121,8 @@ def login():
     if request.args.get('validation') == '1' or publish:
         scope += ' ' + LISTING_SCOPE
         session['oauth_destination'] = ('resale_home' if publish_kind == 'resale' else 'publish_kitcho') if publish else 'listing_validation'
+    elif request.args.get('drafts') == '1':
+        session['oauth_destination'] = 'draft_form'
     else:
         session.pop('oauth_destination', None)
     session['requested_scope'] = scope
@@ -488,6 +492,7 @@ def upload():
 
 register_resale(app, page, access_token, TOKENS, configured, upload_image_from_url)
 register_approved(app, page, access_token, TOKENS, configured)
+register_drafts(app, page, access_token, TOKENS, configured)
 
 
 if __name__ == '__main__':
