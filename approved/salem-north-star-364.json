@@ -1,0 +1,125 @@
+{
+  "inventory_id": "MW-2026-364",
+  "price_disclosed": "19.95",
+  "scheduled_eastern": "2026-11-29T07:00:00-05:00",
+  "publication_label": "Sunday, November 29, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved price and Sunday schedule.",
+  "shipping_description": "plus buyer-paid calculated USPS Ground Advantage shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-364",
+    "product": {
+      "title": "Salem North Star Atomic Starburst Handled Cake Plate 11 1/2 in Rim Chip",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Salem North Star Handled Cake Plate</h2><p>Turquoise, tan and black atomic starbursts on a cream background, with two low tab handles.</p><h3>Condition</h3><p>Rim chip visible on the underside, shown in the close-up. Some wear to the starburst design and scattered surface marks.</p><h3>Details</h3><p>Measures 11\u00bd \u00d7 10\u00be \u00d7 \u215e inches. Weighs 1 lb 7.6 oz. Backstamp reads North Star, Salem, ovenproof, and 66 beneath three stars.</p><h3>Included</h3><p>One handled cake plate.</p><h3>Packing &amp; Shipping</h3><p>Padded and boxed. Buyer-paid calculated shipping. 30-day buyer-paid returns.</p></div>",
+      "categories": {
+        "primaryCategoryId": "262379"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Rim chip visible on the underside, shown in the close-up. Some wear to the starburst design and scattered surface marks."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Salem"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Cake Plate"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "North Star"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Multicolor"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Ceramic"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/OGUAAeSwK3prBlJB/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/RR0AAeSw60RrBlJC/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/OgMAAeSwBHtrBlJD/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/OUUAAeSwjjRrBlJD/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/ROIAAeSwWZ9rBlJE/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/RaUAAeSwhl9rBlJF/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/Lg4AAeSwKpprBlJG/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-364",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "19.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-29T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 16,
+            "width": 16,
+            "height": 5
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "06169709a9c4dd016c0aeb11b935f425"
+  },
+  "payload_sha256": "e8aa2044b5fb45d2fb7f65163828bd89f2b13de66c7eb3642773eacb97cea8c9"
+}
