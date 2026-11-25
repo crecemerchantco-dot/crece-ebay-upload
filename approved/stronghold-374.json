@@ -1,0 +1,158 @@
+{
+  "inventory_id": "MW-2026-374",
+  "price_disclosed": "24.95",
+  "scheduled_eastern": "2026-11-27T07:00:00-05:00",
+  "publication_label": "Friday, November 27, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved prices and tagline and explicitly confirmed eBay publication Friday.",
+  "shipping_description": "Buyer-paid calculated shipping. Estimated 2 lb packed, 14 x 12 x 3 inch mailer.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-374",
+    "product": {
+      "title": "Primark The Stronghold Chore Jacket Mens XL Blue Gray Textured Cotton Overshirt",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px\"><h2>Primark x The Stronghold Cotton Chore Overshirt</h2><p>Textured blue-gray cotton and three patch pockets make this chore jacket an easy layer over a T-shirt. Primark x The Stronghold button-front overshirt, tagged men\u2019s XL, with button cuffs.</p><h3>Condition</h3><p>Pre-owned with wrinkles and light visible wear. See collar, cuff and hem close-ups.</p><h3>Details</h3><ul><li>100% cotton. Made in Bangladesh.</li><li>Chest pit to pit 23.5 inches; shoulders 20 inches; back length 29 inches; sleeve shoulder to cuff 26.25 inches; neck 18.5 inches.</li></ul><h3>Included</h3><p>One overshirt.</p><h3>Packing &amp; Shipping</h3><p>Ships folded in a protective mailer. Buyer-paid calculated shipping. Returns accepted within 30 days; buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "57988"
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Primark"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XL"
+          ]
+        },
+        {
+          "name": "Size Type",
+          "values": [
+            "Regular"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Style",
+          "values": [
+            "Chore Jacket"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Jacket"
+          ]
+        },
+        {
+          "name": "Outer Shell Material",
+          "values": [
+            "Cotton"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Bangladesh"
+          ]
+        },
+        {
+          "name": "Closure",
+          "values": [
+            "Button"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/dk0AAeSwm~ZrB1nj/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/deYAAeSwxktrB1nk/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/gWoAAeSwLetrB1nl/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/gLUAAeSwhRFrB1nm/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i2AAAeSwVONrB1nn/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/gU4AAeSw5dtrB1no/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/i5MAAeSwnnNrB1nq/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/jdMAAeSwWfVrB1nr/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/gI0AAeSwByxrB1nr/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/iqsAAeSwvo1rB1ns/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with wrinkles and light visible wear. See collar, cuff and hem close-ups."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-374",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "24.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-27T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 14,
+            "width": 12,
+            "height": 3
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "6556f44dd6636532bb8db4ed16e6e834"
+  },
+  "payload_sha256": "d2e6089dd2d9cce39e994e3c1ea494941485584639c09832f2fb052e82ec1fbf"
+}
