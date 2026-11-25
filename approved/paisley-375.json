@@ -1,0 +1,162 @@
+{
+  "inventory_id": "MW-2026-375",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-27T07:00:00-05:00",
+  "publication_label": "Friday, November 27, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner requested Friday and approved disclosed prices and wording.",
+  "shipping_description": "Buyer-paid calculated shipping; estimated 1 lb packed in 12 x 10 x 2 inch protective mailer.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-375",
+    "product": {
+      "title": "Apt 9 Premier Flex No Iron Shirt Mens XL Dark Paisley Long Sleeve Cotton Stretch",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px\"><h2>Apt. 9 Premier Flex Paisley Shirt</h2><p>The small paisley print adds muted blue and rust accents to a dark shirt that pairs easily with a blazer. Apt. 9 Premier Flex No Iron shirt, tagged men\u2019s XL, with a chest pocket and adjustable button cuffs.</p><h3>Condition</h3><p>Pre-owned with light wrinkles. See collar and cuff close-ups.</p><h3>Details</h3><ul><li>60% cotton, 37% polyester, 3% spandex. Made in Bangladesh.</li><li>Chest pit to pit 26 inches; shoulders 18.75 inches; back length 30 inches; sleeve shoulder to cuff 26.5 inches; neck 17 inches.</li></ul><h3>Included</h3><p>One shirt.</p><h3>Packing &amp; Shipping</h3><p>Ships folded in a protective mailer. Buyer-paid calculated shipping. Returns accepted within 30 days, buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "57991"
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Apt. 9"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XL"
+          ]
+        },
+        {
+          "name": "Size Type",
+          "values": [
+            "Regular"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Paisley"
+          ]
+        },
+        {
+          "name": "Sleeve Length",
+          "values": [
+            "Long Sleeve"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Cotton Blend"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "Bangladesh"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Dress Shirt"
+          ]
+        },
+        {
+          "name": "Features",
+          "values": [
+            "Stretch"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Multicolor"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/hdsAAeSw--hrB17r/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/kQcAAeSwtYprB17s/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/hjkAAeSwSZZrB17t/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/m28AAeSwVONrB17u/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/j7EAAeSwG29rB17w/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/jzsAAeSw4aFrB17x/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/he8AAeSwV0hrB17y/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/hnYAAeSwWRprB17z/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with light wrinkles. See collar and cuff close-ups."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-375",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-27T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "4cd0391f870e3a2d6cdc27cba8eda2a4"
+  },
+  "payload_sha256": "4e518c596a5599e3f2680c45b3bbdbbd9135d7f985d41882ff10c7db8c2ab9c3"
+}
