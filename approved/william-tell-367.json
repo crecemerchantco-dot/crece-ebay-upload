@@ -1,0 +1,106 @@
+{
+  "inventory_id": "MW-2026-367",
+  "price_disclosed": "44.95",
+  "scheduled_eastern": "2026-12-02T07:00:00-05:00",
+  "publication_label": "Wednesday, December 2, 2026 at 7:00 a.m. Eastern",
+  "owner_instruction": "Matt approved $35 local Marketplace and $44.95 eBay and requested the eBay listing for next Wednesday.",
+  "shipping_description": "Buyer-paid calculated USPS Ground Advantage. Estimated boxed parcel 15 x 9 x 11 in, 7 lb.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-367",
+    "product": {
+      "title": "William Tell Cast Iron Mechanical Bank Book of Knowledge Reproduction",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;margin:0 0 12px;\">William Tell Cast Iron Mechanical Bank</h2><p>William Tell, a tiny red apple, and a castle make this cast-iron coin bank a whole scene in ten inches. This vintage Book of Knowledge reproduction has a painted green base, a castle tower, and both figures, with the red apple still present. The underside carries the cast-in Book of Knowledge reproduction mark.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Condition</h3><p>Paint loss, surface wear, and rust spotting, especially on the base. The coin mechanism has not been fully tested.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Details</h3><p>Painted cast iron. The bank measures 10 \u00d7 3\u00bc \u00d7 6\u00bc inches and weighs 4 lb 5.2 oz.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Included</h3><p>One William Tell mechanical coin bank, as pictured.</p><h3 style=\"font-size:18px;margin:20px 0 8px;\">Packing &amp; Shipping</h3><p>The cast-iron base will be braced in a sturdy corrugated box with clearance around the figures and projecting parts. Buyer-paid calculated shipping. Returns accepted within 30 days with buyer-paid return shipping.</p></div>",
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/esEAAeSwWRprBl5G/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/hiUAAeSwhRFrBl5G/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/MPoAAeSwuRxrBl5H/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/hRwAAeSw2b9rBl5I/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/kXsAAeSwY-lrBl5J/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/hIEAAeSw4aFrBl5K/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "885"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Paint loss, surface wear, and rust spotting, especially on the base. The coin mechanism has not been fully tested."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "The Book of Knowledge"
+          ]
+        },
+        {
+          "name": "Original/Reproduction",
+          "values": [
+            "Reproduction"
+          ]
+        }
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-367",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "44.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-12-02T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 15,
+            "width": 9,
+            "height": 11
+          },
+          "packageWeight": {
+            "majorUnit": 7,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "a435116b5111654d3322bc8b906d512d"
+  },
+  "payload_sha256": "5038d868b0502150b45a126aea01ad110a8a2c428c40f29bffed56fd0183c2e0"
+}
