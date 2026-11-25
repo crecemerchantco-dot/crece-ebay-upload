@@ -76,7 +76,7 @@ def submit_draft(token, payload, submissions):
     with submission_lock:
         if digest in submissions:
             return submissions[digest], None
-        response = feed_request('POST', token, json={'feedType': 'FX_LISTING', 'schemaVersion': '1.0'})
+        response = feed_request('POST', token, json={'feedType': 'FX_DRAFT', 'schemaVersion': '1.0'})
         task_id = urlsplit(response.headers.get('Location', '')).path.rstrip('/').rsplit('/', 1)[-1]
         if not TASK_ID.fullmatch(task_id):
             raise DraftError('eBay did not return a usable draft task ID.')
@@ -161,7 +161,7 @@ def register(app, page, access_token, tokens, configured):
             abort(404)
         try:
             result = feed_request('GET', token, f'/{task_id}').json()
-            if result.get('feedType') != 'FX_LISTING':
+            if result.get('feedType') != 'FX_DRAFT':
                 abort(404)
             status = result.get('status')
             summary = result.get('uploadSummary') or {}
