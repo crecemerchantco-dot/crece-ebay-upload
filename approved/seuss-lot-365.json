@@ -1,0 +1,137 @@
+{
+  "inventory_id": "MW-2026-365",
+  "price_disclosed": "14.95",
+  "scheduled_eastern": "2026-11-30T07:00:00-05:00",
+  "publication_label": "Monday, November 30, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner set $14.95 and next Monday; confirmed opener by proceeding without changes.",
+  "shipping_description": "plus buyer-paid calculated USPS Media Mail shipping",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-365",
+    "product": {
+      "title": "Dr. Seuss Hardcover Lot of 4: Hop on Pop, ABC, Duck Feet & Shape of Me",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222\"><h2>Four Dr. Seuss Hardcovers</h2><p>From rhymes that bounce to a boy who wishes for duck feet, these four Dr. Seuss hardcovers make a playful stack for reading aloud.</p><p>Illustrated hardcovers from Random House\u2019s Beginner Books and Bright &amp; Early Books lines.</p><h3>Condition</h3><p>Used reading copies with visible cover, corner, and spine wear. ABC has handwriting inside the front cover and tearing at the front gutter. Hop on Pop has spotting near the front. Duck Feet has a barcode sticker on the front cover. Hop on Pop and The Shape of Me have small price stickers. Pages have not been checked individually.</p><h3>Details</h3><p>Duck Feet and The Shape of Me are marked Book Club Edition. The four together measure 9\u00bc \u00d7 7\u00be \u00d7 2 inches and weigh 2 lb 6.6 oz before packing.</p><h3>Included</h3><ul><li>Hop on Pop</li><li>Dr. Seuss\u2019s ABC</li><li>I Wish That I Had Duck Feet, by Dr. Seuss writing as Theo. LeSieg and illustrated by B. Tobey</li><li>The Shape of Me and Other Stuff</li></ul><h3>Packing &amp; Shipping</h3><p>Packed in a rigid box with corner protection. Buyer-paid calculated USPS Media Mail. 30-day buyer-paid returns.</p></div>",
+      "categories": {
+        "primaryCategoryId": "261186"
+      },
+      "itemCondition": {
+        "conditionId": "6000",
+        "conditionDescription": "Used reading copies with visible cover, corner, and spine wear. ABC has handwriting inside the front cover and tearing at the front gutter. Hop on Pop has spotting near the front. Duck Feet has a barcode sticker on the front cover. Hop on Pop and The Shape of Me have small price stickers. Pages have not been checked individually."
+      },
+      "aspects": [
+        {
+          "name": "Book Title",
+          "values": [
+            "Dr. Seuss Four-Book Lot"
+          ]
+        },
+        {
+          "name": "Author",
+          "values": [
+            "Dr. Seuss"
+          ]
+        },
+        {
+          "name": "Language",
+          "values": [
+            "English"
+          ]
+        },
+        {
+          "name": "Format",
+          "values": [
+            "Hardcover"
+          ]
+        },
+        {
+          "name": "Publisher",
+          "values": [
+            "Random House"
+          ]
+        },
+        {
+          "name": "Genre",
+          "values": [
+            "Children & Young Adults"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/X0sAAeSwzy1rBlY3/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/SOwAAeSwmZhrBlY4/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/SD4AAeSwZndrBlY5/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/2hsAAeSwxmprBlY7/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VMsAAeSwOgprBlY8/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/U7gAAeSwcUFrBlY9/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/U6sAAeSwv6prBlY-/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/VDsAAeSwAItrBlZA/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/R8cAAeSw4qZrBlZA/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/XyMAAeSwYoJrBlZB/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/R74AAeSwDP1rBlZC/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/X5kAAeSwxrBrBlZD/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/X58AAeSwxrBrBlZE/$_57.JPG?set_id=8800005007"
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-365",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "14.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-30T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364951018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 4
+          },
+          "packageWeight": {
+            "majorUnit": 3,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "f3c96e5eb3600225b252fc8872ba3651"
+  },
+  "payload_sha256": "c3de04eac85163dbb921c1ac1330e021930f25d5c82a72ea19c6b687025d2853"
+}
