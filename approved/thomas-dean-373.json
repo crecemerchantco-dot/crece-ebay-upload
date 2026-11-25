@@ -1,0 +1,156 @@
+{
+  "inventory_id": "MW-2026-373",
+  "price_disclosed": "24.95",
+  "scheduled_eastern": "2026-11-27T07:00:00-05:00",
+  "publication_label": "Friday, November 27, 2026 at 7 a.m. Eastern",
+  "owner_instruction": "Owner approved price and date, then explicitly authorized an average shipping weight.",
+  "shipping_description": "Buyer-paid calculated shipping; estimated packed weight 1 lb, 12 x 10 x 2 inch mailer.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-373",
+    "product": {
+      "title": "Thomas Dean Shirt Mens XXL Blue Tonal Paisley Cotton Stretch Long Sleeve",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px\"><h2>Thomas Dean Collection Blue Paisley Shirt</h2><p>The tonal blue paisley adds texture and pattern under a jacket. Thomas Dean Collection long-sleeve button-front shirt, tagged XXL, with adjustable button cuffs and contrasting inner trim.</p><h3>Condition</h3><p>Pre-owned with wrinkles and some lint visible. See the collar and cuff close-ups for fabric condition.</p><h3>Details</h3><ul><li>98% cotton, 2% spandex. Made in China.</li><li>Style C49A22-419R, color BLUE.</li><li>Chest pit to pit 24.5 inches; shoulders 19.75 inches; back length 32 inches; sleeve shoulder to cuff 25.25 inches; neck 17.5 inches.</li></ul><h3>Included</h3><p>One shirt.</p><h3>Packing &amp; Shipping</h3><p>Ships folded in a protective mailer. Buyer-paid calculated shipping. Returns accepted within 30 days, buyer pays return shipping.</p></div>",
+      "categories": {
+        "primaryCategoryId": "57991"
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Thomas Dean & Co."
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "2XL"
+          ]
+        },
+        {
+          "name": "Size Type",
+          "values": [
+            "Regular"
+          ]
+        },
+        {
+          "name": "Department",
+          "values": [
+            "Men"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Blue"
+          ]
+        },
+        {
+          "name": "Pattern",
+          "values": [
+            "Paisley"
+          ]
+        },
+        {
+          "name": "Sleeve Length",
+          "values": [
+            "Long Sleeve"
+          ]
+        },
+        {
+          "name": "Material",
+          "values": [
+            "Cotton Blend"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "China"
+          ]
+        },
+        {
+          "name": "Type",
+          "values": [
+            "Dress Shirt"
+          ]
+        }
+      ],
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMDA4/z/SnkAAeSwm~ZrBvCd/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTU0/z/2tYAAeSwxmprBvCe/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/X~AAAeSwyKBrBvCf/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/YuUAAeSwju9rBvCh/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1NFgxNTM2/z/SLUAAeSwGmVrBvCi/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/YcEAAeSw9mxrBvCj/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/SMkAAeSwmZhrBvCk/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxNTM2/z/SDsAAeSwZ5VrBvCl/$_57.JPG?set_id=8800005007"
+      ],
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Pre-owned with wrinkles and some lint visible. See collar and cuff close-ups."
+      }
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-373",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "24.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-27T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 10,
+            "height": 2
+          },
+          "packageWeight": {
+            "majorUnit": 1,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "9f305bd789c6383f9f7c4cfc48045b8a"
+  },
+  "payload_sha256": "46fbc1bc5c46109531b52bc1a5fa314f57e0be44da5f7e19a98fae6d12965ff6"
+}
