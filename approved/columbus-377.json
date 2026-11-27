@@ -1,0 +1,115 @@
+{
+  "inventory_id": "MW-2026-377",
+  "price_disclosed": "59.95",
+  "scheduled_eastern": "2026-11-28T07:00:00-05:00",
+  "publication_label": "Saturday, November 28, 2026 at 7:00 a.m. Eastern",
+  "owner_instruction": "Matt approved eBay at $59.95 with Best Offer and no automatic thresholds, for November 28 at 7 a.m. Eastern.",
+  "shipping_description": "Buyer-paid calculated USPS Ground Advantage. Estimated boxed parcel 12 x 8 x 8 in, 4 lb.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-377",
+    "product": {
+      "title": "Columbus World\u2019s Fair Cast Iron Mechanical Bank Book of Knowledge Reproduction",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2 style=\"font-size:22px;margin:0 0 12px;\">Columbus World\u2019s Fair Cast Iron Mechanical Bank</h2><p>A raised sailing ship and a hinged log that reveals a second painted figure make this cast-iron bank a distinctive piece for a mechanical bank collection.</p><p>This vintage American-made Book of Knowledge reproduction depicts the Columbus World\u2019s Fair Bank design associated with the 1893 World\u2019s Columbian Exposition in Chicago. The underside is marked Columbus, Reproduced from Original in Collection of The Book of Knowledge, and Made in U.S.A.</p><h3>Condition</h3><p>Scattered paint chips and paint loss, surface rubbing and accumulated dust. Both figures and the coin access cover are present. The mechanism cycles. Coin deposition has not been tested. Please review all photographs. This is a vintage reproduction of the 1893 design.</p><h3>Details</h3><p>Painted cast iron. Measures 8 \u00d7 2\u00bc \u00d7 4\u00bc inches and weighs 2 lb 9.6 oz unpacked.</p><h3>Included</h3><p>One Columbus mechanical bank as pictured.</p><h3>Packing &amp; Shipping</h3><p>The cast-iron base will be secured in a sturdy corrugated box with clearance around the moving figures. Buyer-paid calculated ground shipping and 30-day buyer-paid returns.</p><p>Inventory MW-2026-377<br>CRECE Merchant Co.</p></div>",
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/ewgAAeSwDP1rCgSI/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/V0QAAeSwpX1rCgSJ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/iaQAAeSwH6FrCgSK/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/iMQAAeSwLetrCgSM/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/WHYAAeSw60RrCgSN/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/fIYAAeSwZndrCgSO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/imsAAeSwByxrCgSP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/igUAAeSwBHtrCgSQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/iYwAAeSw5dtrCgSR/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "885"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Scattered paint chips and paint loss, surface rubbing and accumulated dust. Both figures and the coin access cover are present. The mechanism cycles. Coin deposition has not been tested."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "The Book of Knowledge"
+          ]
+        },
+        {
+          "name": "Original/Reproduction",
+          "values": [
+            "Reproduction"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-377",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "59.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-28T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 8,
+            "height": 8
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "5201b1c8b5744f5a61358babe0fd285f"
+  },
+  "payload_sha256": "56afa6aa703d52b568e0a77a3a4fa5718fbb17313eac6be78fea0f829bc7937a"
+}
