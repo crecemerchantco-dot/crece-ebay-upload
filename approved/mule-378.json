@@ -1,0 +1,114 @@
+{
+  "inventory_id": "MW-2026-378",
+  "price_disclosed": "49.95",
+  "scheduled_eastern": "2026-11-29T07:00:00-05:00",
+  "publication_label": "Sunday, November 29, 2026 at 7:00 a.m. Eastern",
+  "owner_instruction": "Matt approved $49.95 with Best Offer and requested this coming Sunday on eBay. Standard 7 a.m. Eastern.",
+  "shipping_description": "Buyer-paid calculated USPS Ground Advantage. Estimated boxed parcel 14 x 8 x 13 in, 5 lb.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-378",
+    "product": {
+      "title": "I Always Did Spise a Mule Rider Cast Iron Mechanical Bank Book of Knowledge",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>I Always Did \u2019Spise a Mule Mechanical Bank</h2><p>A red-capped rider, chain reins, and a green base lettered \u201cI Always Did \u2019Spise a Mule\u201d give this vintage cast-iron mechanical bank its character.</p><p>Rider-on-mule version. The underside is marked as a Book of Knowledge reproduction and Made in U.S.A.</p><h3>Condition</h3><p>Shows paint wear, dust, and visible gaps along the rider\u2019s cap and back. Coin-deposit operation is unverified. See photos for condition.</p><h3>Details</h3><p>Painted cast iron. Measures 9 \u00d7 3 \u00d7 8 inches and weighs 3 lb 2.5 oz unpacked.</p><p>Includes one mechanical bank as pictured. Buyer-paid calculated ground shipping.</p><p>Inventory MW-2026-378<br>CRECE Merchant Co.</p></div>",
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/Yj0AAeSwRzZrCgh3/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/ikMAAeSwfPZrCgh4/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/lYkAAeSwjjRrCgh5/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/laQAAeSw~KRrCgh6/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/i8cAAeSwxktrCgh7/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/YlUAAeSwRzZrCgh8/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/ZEgAAeSw1-NrCgh-/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/iNUAAeSwZndrCgh-/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "885"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Shows paint wear, dust, and visible gaps along the rider\u2019s cap and back. Coin-deposit operation is unverified."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "The Book of Knowledge"
+          ]
+        },
+        {
+          "name": "Original/Reproduction",
+          "values": [
+            "Reproduction"
+          ]
+        },
+        {
+          "name": "Country of Origin",
+          "values": [
+            "United States"
+          ]
+        }
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-378",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "49.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-29T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 14,
+            "width": 8,
+            "height": 13
+          },
+          "packageWeight": {
+            "majorUnit": 5,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "96b689ea88d11339da7fb50cb890436d"
+  },
+  "payload_sha256": "f0fa85b21c9928169ab87f70175435a2fa4a4207d37b6103168f3a53178013f2"
+}
