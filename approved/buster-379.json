@@ -1,0 +1,109 @@
+{
+  "inventory_id": "MW-2026-379",
+  "price_disclosed": "29.95",
+  "scheduled_eastern": "2026-12-01T07:00:00-05:00",
+  "publication_label": "Tuesday, December 1, 2026 at 7:00 a.m. Eastern",
+  "owner_instruction": "Matt approved as is and requested Tuesday at 7 a.m. Eastern.",
+  "shipping_description": "Buyer-paid calculated USPS Ground Advantage. Estimated boxed parcel 8 x 6 x 6 in, 2 lb.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-379",
+    "product": {
+      "title": "Buster Brown & Tige Style Cast Iron Still Bank Red Sailor Outfit",
+      "description": "<div style=\"font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#222;max-width:760px;\"><h2>Buster Brown &amp; Tige\u2013Style Cast Iron Still Bank</h2><p>A bright red sailor outfit and a wide-eyed seated dog give this Buster Brown and Tige\u2013style cast-iron coin bank its character.</p><p>The coin slot is across the back. The bank is unmarked and appears to be a later reproduction. Maker and age are unknown.</p><h3>Condition</h3><p>Paint loss on the face, collar and hat, with visible gaps along the casting seams. Please review the photos for details.</p><h3>Details</h3><p>Painted cast iron. Measures 3 inches across, 1\u00bd inches deep and 5 inches tall. Unpacked weight is 12.2 oz.</p><p>One coin bank as pictured. Buyer-paid calculated ground shipping.</p><p>Inventory MW-2026-379<br>CRECE Merchant Co.</p></div>",
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/b9YAAeSwJeJrCgwO/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/kwwAAeSwKpprCgwP/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/mLoAAeSw4aJrCgwQ/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/cBoAAeSwpX1rCgwR/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/aG4AAeSwrGxrCgwS/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/mHEAAeSwM95rCgwU/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/ZfMAAeSwYoJrCgwV/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/cksAAeSwhl9rCgwW/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTUzNlgxMTUy/z/pJMAAeSwIFxrCgwX/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "886"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Paint loss on the face, collar and hat, with visible gaps along the casting seams."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "Unbranded"
+          ]
+        },
+        {
+          "name": "Original/Reproduction",
+          "values": [
+            "Reproduction"
+          ]
+        }
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-379",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "29.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-12-01T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 8,
+            "width": 6,
+            "height": 6
+          },
+          "packageWeight": {
+            "majorUnit": 2,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "c43a75875e64359284bd8cce1a526fe9"
+  },
+  "payload_sha256": "c044eb25cf16dd65c4de036dcf693024bb92934cd0e8c3d8dd513f95c20c6a80"
+}
