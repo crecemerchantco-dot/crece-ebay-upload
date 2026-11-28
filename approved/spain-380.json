@@ -1,0 +1,108 @@
+{
+  "inventory_id": "MW-2026-380",
+  "price_disclosed": "49.95",
+  "scheduled_eastern": "2026-11-30T07:00:00-05:00",
+  "publication_label": "Monday, November 30, 2026 at 7:00 a.m. Eastern",
+  "owner_instruction": "Matt confirmed the eBay terms and instructed submission.",
+  "shipping_description": "Buyer-paid calculated USPS Ground Advantage. Estimated boxed parcel 12 x 8 x 8 in, 4 lb.",
+  "listing": {
+    "marketplace": "EBAY_US",
+    "sku": "MW-2026-380",
+    "product": {
+      "title": "U.S. and Spain Cast Iron Mechanical Bank Book of Knowledge Reproduction",
+      "description": "<div style=\"font-family:Arial,sans-serif\"><h2>U.S. and Spain Cast Iron Mechanical Bank Book of Knowledge Reproduction</h2><p>A shore cannon marked \u201cU.S.\u201d faces a ship marked \u201cSpain\u201d in this painted cast-iron mechanical bank from the Book of Knowledge reproduction series.</p><p>The underside bears the reproduction mark.</p><h3>Condition</h3><p>Visible paint wear, dust, and surface oxidation. Coin-deposit operation is unverified.</p><h3>Details</h3><p>8 \u00d7 2\u00bd \u00d7 4\u00bc inches. Unpacked weight 2 lb 9.6 oz. One bank as pictured.</p><p>Inventory MW-2026-380<br>CRECE Merchant Co.</p></div>",
+      "imageUrls": [
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/M78AAeSwO1trCjd0/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/gdAAAeSwByxrCjd1/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/c80AAeSwlxRrCjd2/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/gAgAAeSwLetrCjd3/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/f1EAAeSwAItrCjd4/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/NPgAAeSw1-NrCjd5/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/dQIAAeSwfPZrCjd6/$_57.JPG?set_id=8800005007",
+        "https://i.ebayimg.com/00/s/MTE1MlgxNTM2/z/dwgAAeSwxktrCjd7/$_57.JPG?set_id=8800005007"
+      ],
+      "categories": {
+        "primaryCategoryId": "885"
+      },
+      "itemCondition": {
+        "conditionId": "3000",
+        "conditionDescription": "Visible paint wear, dust, and surface oxidation. Coin-deposit operation is unverified."
+      },
+      "aspects": [
+        {
+          "name": "Brand",
+          "values": [
+            "The Book of Knowledge"
+          ]
+        },
+        {
+          "name": "Original/Reproduction",
+          "values": [
+            "Reproduction"
+          ]
+        }
+      ]
+    },
+    "listingItems": {
+      "items": [
+        {
+          "sku": "MW-2026-380",
+          "itemTerms": {
+            "availability": {
+              "quantityAvailable": 1
+            },
+            "pricingTerms": {
+              "fixedPrice": "49.95"
+            }
+          }
+        }
+      ]
+    },
+    "listingTerms": {
+      "listingFormat": "FIXED_PRICE",
+      "lifecycleTerms": {
+        "listingDurationInDays": "GTC",
+        "scheduledToStartAt": "2026-11-30T12:00:00Z"
+      },
+      "itemLocation": {
+        "country": "US",
+        "postalCode": "49684",
+        "location": "Traverse City, Michigan"
+      },
+      "bestOfferTerms": {
+        "bestOfferEnabled": true
+      },
+      "paymentTerms": {
+        "businessPolicyId": "283364957018"
+      },
+      "returnTerms": {
+        "businessPolicyId": "283364948018"
+      },
+      "fulfillmentTerms": {
+        "shippingTerms": {
+          "businessPolicy": {
+            "businessPolicyId": "283364949018"
+          }
+        },
+        "packageSpecifications": {
+          "measurementSystem": "ENGLISH",
+          "packageDimensions": {
+            "length": 12,
+            "width": 8,
+            "height": 8
+          },
+          "packageWeight": {
+            "majorUnit": 4,
+            "minorUnit": 0
+          },
+          "packageType": "PACKAGE_THICK_ENVELOPE"
+        }
+      }
+    },
+    "options": {
+      "operationMode": "EXECUTE"
+    },
+    "idempotencyKey": "37d4e8288d335fc6a5691e1db9d4e268"
+  },
+  "payload_sha256": "95dbf49fbadfdd8bf2778546473dc46d5a8d94388ec6e9a4098d50531270995e"
+}
