@@ -17,6 +17,7 @@ from resale_workflow import find_existing, check_observed
 from listing_terms import selected_policies
 
 APPROVED = {
+    'spain-380': ('spain-380.json', 'MW-2026-380', '49.95', '2026-11-30T12:00:00Z'),
     'buster-379': ('buster-379.json', 'MW-2026-379', '29.95', '2026-12-01T12:00:00Z'),
     'mule-378': ('mule-378.json', 'MW-2026-378', '49.95', '2026-11-29T12:00:00Z'),
     'columbus-377': ('columbus-377.json', 'MW-2026-377', '59.95', '2026-11-28T12:00:00Z'),
